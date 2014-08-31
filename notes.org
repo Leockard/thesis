@@ -1,0 +1,135 @@
+# thesis/notes.org
+# all kinds of notes for my thesis
+
+
+* state of the art
+** connectome
+   + vast datasets - how to analize them?
+** games on graphs
+   + Nowak
+** graphs from games
+   + dots and boxes
+   + sprouts
+** evolutionary dynamics
+   + Nowak
+** networks of the brain
+   + schizoprhenia
+   + the default network
+* tentative objective
+  Describe different models whose output is a graph that resembles a primate brain, in
+  connectivity patterns and/or graphical measures (emphasis on results).
+  OR
+  describe a process that resembles synaptogenesis at some level and see if it resembles
+  known brain measures (emphasis on the process).
+
+* ideas
+** neuroscience model (formation)
+   Start with the complete graph. Prune or reconfigure some connections in a way
+   resembling neural development.
+** graph theoretical model (structure)
+   Instead of starting with a degree sequence, start with a per-node centrality or
+   clusterization sequence. Come up with ways of constructing graphs with said sequences.
+** agent-based model
+*** theory
+    when one of the motor neurons is active, it suppresses the synapses of the other neurons
+*** theory (text from Sanes & Lichtman, 1999)
+    Synapse elimination is gradual in two ways
+    + within a single muscle, the time at which individual fibers lose inputs is spread out
+      over many days
+    + the transition from multiple to single innervation is gradual at single NMJs: The
+      strength of each input is roughly equal at birth, but one input gradually gains
+      territory as the others lose
+     
+    Synapse elimination is competitive in the sense that the fate of one axon’s terminals
+    depends on the presence or absence of its neighbors (Colman & Lichtman 1993). Any
+    mechanism must account for two fundamental characteristics of the competitive process.
+    + The first is that the muscle mediates competitive interactions among axons. The most
+      compelling evidence for this idea is that axons compete even when they are separated
+      from each other by long distances (up to 1 mm).
+    + Second, electrical activity affects the intensity of competition. For example,
+      blockade of synaptic activity and excessive stimulation slow and speed elimination,
+      respectively, implying that the rate at which muscles become singly innervated is
+      positively correlated with their overall level of activity.
+      
+    At least three general mechanisms could explain the competitive nature, spatial
+    constraints, and activity-dependence of synapse elimination
+    + First, muscles might release limiting amounts of a maintenance factor for which axons
+      compete. The more active axon would be better able to take up or utilize the factor,
+      whereupon it would become even stronger and more active, until eventually it starved
+      its competitor.
+    + Alternatively, axons might vie to escape the punitive effects of a damaging
+      muscle-derived synaptotoxin. Here, activity might serve to make an axon immune.
+    + A third model postulates that there be intracellular signals, synaptomedins, and that
+      their precise localization within a synaptic plaque allows them to differentially
+      reward or punish the competing axons. They must localize the sites at which the
+      intercellular signals are presented. Key to the synaptomedin model is that some
+      inhomogeneity within the postsynaptic apparatus anticipates the loss of a particular
+      nerve terminal.
+     
+*** model
+    Start with a set of vertices and an empty set of edges. Perform games synchronously in
+    which the utility is either 1 or 0. Confront each node to each other and compute the
+    sum S of all the utilities.
+   + The sum S becomes the node's degree. Construct a graph with the degree sequence thus
+     obtained (structure).
+   + Perform games asynchronously and construct the edges accordingly (formation).
+     
+* bibliography
+** neuroscience
+   + adult neurogenesis
+   + handbook of brain connectivity
+     
+** networks / graphs
+   + evolution of networks: from biological nets to the internet and www
+   + dynamical processes on complex networks
+   + graph spectra for complex networks
+     
+* references
+** papers read
+   (1) http://www.annualreviews.org/doi/abs/10.1146/annurev.neuro.22.1.389?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%3dncbi.nlm.nih.gov&
+   http://www.plosone.org/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0005243&representation=PDF
+   http://bearlab-s1.mit.edu/BearLab/pubs/huang99.pdf   
+   The role of neuronal identity in synaptic competition - important!
+   http://brainimaging.waisman.wisc.edu/~chung/neuro.processing/literature/rubinov.2010.NI.network.pdf
+   
+** on competition at other stages (learning, plasticity)
+   Competitive Hebbian learning through spike-timing-dependent synaptic plasticity - miller, abbott
+   Synaptic Economics: Competition and Cooperation in Synaptic Plasticity - miller
+   
+** further reference
+*** real life applications of networks in the brain  http://arxiv.org/pdf/1105.4705v1.pdf
+    During aging, for example, functional connectivity to neighbors at the local level and
+    other brain areas at the global level is reduced particularley affecting frontal and
+    temporal cortical and subcortical regions (Achard and Bullmore, 2007). In
+    schizoprhenia, such small-world features were also altered regarding functinoal
+    connectivity in EEg and fMRI (Micheloyannis et al., 2006) and structural connectivity
+    using diffusin tensor imaging (van den Heuvel et al., 2010). Alzheimer's disease
+    patients show a link between highly-connected nodes in functional networks and high
+    amyloid-beta deposition (Buckner et al., 2009) and abnormal small-world functional
+    connectivity both in EEG (Stam et al., 2007) and in fMRI (He et al., 2008). Functional
+    connectivity for epilepsy patients is enahanced in EEG (Bettus et al., 2008) and shows
+    altered modular organization in MEG (Chavez et al., 2010) whereas DTI structural
+    connectivity showed reduced fractional anisotropy both adjacent to and further apart
+    from cortical lesions in patients with partial intractable epilepsy (Dumas de la Roque
+    et al., 2004). For healty subjects, the number of steps to go from one node in the
+    fMRI functional network to another was linked to the IQ of that subject (van den
+    Heuvel et al., 2009).
+*** small world neural networks http://arxiv.org/pdf/1105.4705v1.pdf
+    small-world properties were found on different organizational levels of neural
+    networks: from the tiny nematode C. elegans with about 300 neurons (Watts and
+    Strogatz, 1998) over cortical structural connectivity of the cat and the macaque
+    (Hilgetag et al., 2000a; Hilgetag and Kaiser, 2004; Sporns et al., 2000) to human
+    structural (Hagmann et al., 2008) and functional (Achard et al., 2006) connectivity.
+*** misc
+    http://www.jneurosci.org/content/24/37/8075.abstract (epillepsy)
+    
+    Achard, S., Bullmore, E., 2007. Efficiency and cost of economical brain functional
+    networks. PLoS Comput Biol 3, e17. (aging)
+    
+    Micheloyannis, S., Pachou, E., Stam, C.J., Breakspear, M., Bitsios, P., Vourkas,
+    M.,Erimaki, S., Zervakis, M., 2006. Small-world networks and disturbed functional
+    connectivity in schizophrenia.  Schizophrenia Research 87, 60-66 (schizophrenia)
+    
+    http://neuro.fcrb.es/alexpage/roxin04b.pdf (dynamics)
+    
+    
