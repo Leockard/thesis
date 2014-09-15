@@ -1,0 +1,120 @@
+# small-world_networks.org
+# notes about small-world networks
+
+* Definitions
+  + L grows as ln(n) (wikipedia)
+  + L = O(ln(n))     (scholarpedia)
+  + diameter = O(ln(n))    (Newman 2010)
+    
+  + L >~ L_random and C >> C_random   (Watts & Strogatz)
+  + w = L_rand / L - C / C_lattice    (Telesford, Joyce & Laurienti)
+  + The precise definition of “small-world effect” is still a matter of debate, but in the
+    present case a reasonable definition would be that L should be comparable with the
+    value it would have on the random graph. (Newman 2000)
+
+* Measurement
+  Measure L and C and compare them to those of an "equivalent" random graph. "Equivalent"
+  meaning same degree distribution.
+
+* Properties
+  + Tend to contain communities (sub-networks which have connections between almost any
+    two nodes within them): subgraphs with high C.
+  + Most pairs of nodes will have a short path between them.  Overall low L.
+  + Overabundance of hubs.  Degree distribution is fat-tailed.
+  + Robustness.  Resilient to random node removal.  Weak to target hub removal.  Compare
+    to a random network: weak to random node removal and attacks cannot be
+    targeted. (scholarpedia)
+  + They are rich in structured short-range connections and have a few random long-range
+    connections. (Kleinberg)
+  + Efficient local network navigation (Kleinberg) "...that people seemed to be very good
+    at navigating a small world with almost entirely local information" (scholarpedia).
+    That is, nodes know which of their neighbors are hubs.  Only some small-world graphs
+    are like this.
+  + "... the small-world phenomenon might be common in sparse networks with
+    many vertices, as even a tiny fraction of short cuts would suffice." (W & S)
+  + "Highly clustered, like regular lattices, yet have small characteristic path lengths,
+    like random networks." (W & S)
+  + "...allows to reconcile local properties of a regular network with global properties
+    of a random one, by introducing a certain amount of random long-range connections into
+    an initially regular network." (Barrat and Weigt)
+  + "We will show that this behaviour does not appear at a finite value of the disorder p,
+    but that, for any p > 0, the networks will display this behaviour as soon as their
+    size is large enough." (Barrat and Weigt)
+  + "It is important to notice that the small-world model not only shows the small-world
+    effect, but that it does so at the same time as displaying clustering."
+    (Newman, 2010)
+  + It is straight-forward to show that for ar egular lattice in d dimensions which has
+    the shape of a square or (hyper)cube of side L, and therefore has N = L^d vertices,
+    the average vertex-vertex distance increases as L, or equivalently as N^(1/d). for
+    small values of d this does not give us small-world behavior. In one dimension for
+    example, it means that theaverage distance increases linearly with system size. If we
+    allow the dimension d of the lattice to become large, then N^(1/d) becomes a slowly
+    increasing function of N, and so the lattice does shose the small-world
+    effect. (Newman 2000)
+
+
+* Models
+** Original Watts - Strogatz
+   Rewiring probability p.  Taking a network with a high graph diameter and adding a very
+   small number of edges randomly, the diameter tends to drop drastically.  Random
+   rewiring procedure for interpolating between a regular ring lattice and a random
+   network, without altering the number of vertices or edges in the graph.  At p = 1, the
+   network is NOT equivalent to a random network, since every node always has a degree of
+   at least k (half the original number of neighbrs).
+** Scale-free networks
+   Cohen and Havlin prove that scale-free networks are "ultrasmall-world".
+** Erdos - Renyi random graph
+   As we have argued, random graphs show the small-world effect, possessing average
+   vertex-to-vertex distances which increase only logarithmically with the total number N
+   of vertices, but they do not show clustering — the property that two neighbors of a
+   vertex will often also be neighbors of one another. (Newman, 2000)
+** Degree-diameter graphs
+   ?
+** Barmpoutis et al
+   ?
+
+* Problems
+  + One can see using numerical computations that WS networks have high C and low L for
+    many values of p, but it is not easy to verify these features with rigorous
+    calculations. In an NW network, the substrate ring remains intact, which simplifies
+    calculations enormously. But the network no longer becomes a true random graph for
+    p=1.
+  + Doesn't mimic the degree distributions of real world netorks (Newman, 2010)
+  + In the original model, a vertex can become disconnected from the rest (Newman 2010)
+   
+* Sources
+  + https://en.wikipedia.org/wiki/Small-world_network
+  + http://mathworld.wolfram.com/SmallWorldNetwork.html
+  + http://www.scholarpedia.org/article/Small-world_network
+  + Telesford, Joyce & Laurienti: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3604768/
+  + Cohen and Havlin: http://havlin.biu.ac.il/PS/ch458.pdf
+  + Barmpoutis et al: http://arxiv.org/abs/1007.4031
+  + Newman, Watts (NW model): http://arxiv.org/pdf/cond-mat/9903357.pdf
+  + Kleinberg: https://www.cs.cornell.edu/home/kleinber/nat00.pdf
+
+* Papers read
+  + Watts and Strogatz 1998
+    "Collective dynamics of small world networks"
+    http://www.math.cornell.edu/m/sites/default/files/imported/People/strogatz/nature_smallworld.pdf
+  + Barrat and Weigt 1999
+    "On the properties of small world network models"
+    (They arrive at the same conclusion as Newman & Watts)
+    Therefore, the mere notion of “small-world” graph, i.e. the region of disorder where
+    the local properties are still similar to those of the one-dimensional ring whereas
+    the global properties are determined by the random short-cuts in the graph, depends on
+    its size, and can be extended to smaller and smaller p, taking larger and larger N.
+    http://arxiv.org/pdf/cond-mat/9903411v2.pdf
+  + Newman 2000
+    http://arxiv.org/pdf/cond-mat/0001118.pdf
+    "Models of the small world"
+
+* Further reading
+  + Kleinberg: http://www.cs.cornell.edu/home/kleinber/
+    Small-World Phenomena and Decentralized Search
+  + Newman & Watts: http://arxiv.org/pdf/cond-mat/9903357.pdf
+    "Renormalization group analysis of the small-world network model"
+    Apply renormalization analysis to find the point of phase transition where L stops
+    growing linearly with n and starts growing logarithmically. Barrat and Weigt 1999
+    arrive at some of the same conclusions.
+  + Dynamical systems over small world networks
+  + Cellular automata and small-world networks?
