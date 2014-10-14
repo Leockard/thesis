@@ -3,16 +3,22 @@
 \begin_document
 \begin_header
 \textclass amsbook
+\begin_preamble
+\setcounter{chapter}{0}
+\end_preamble
 \use_default_options true
-\begin_modules
+\begin_removed_modules
 theorems-ams
+\end_removed_modules
+\begin_modules
 eqs-within-sections
 figs-within-sections
+theorems-ams-bytype
 \end_modules
 \maintain_unincluded_children false
-\language english
-\language_package default
-\inputencoding auto
+\language spanish
+\language_package none
+\inputencoding default
 \fontencoding global
 \font_roman default
 \font_sans default
@@ -54,7 +60,7 @@ figs-within-sections
 \paragraph_indentation default
 \quotes_language english
 \papercolumns 1
-\papersides 1
+\papersides 2
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
@@ -69,6 +75,10 @@ figs-within-sections
 Grafos Small-World
 \end_layout
 
+\begin_layout Author
+Leonardo Torres
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
@@ -78,51 +88,127 @@ LatexCommand tableofcontents
 
 \end_layout
 
-\begin_layout Chapter*
-Motivation
+\begin_layout Chapter
+Introducción
 \end_layout
 
 \begin_layout Section*
-Human nature and brains
+Teoría de Grafos
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Etiam et dignissim sem.
+ Nullam maximus ante ac porttitor blandit.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Pellentesque quis quam tincidunt, suscipit sem quis, eleifend ipsum.
+ Integer eget eleifend nisl.
+ Maecenas et vulputate diam.
+ Curabitur luctus consequat fringilla.
+ Etiam pretium ligula et dui interdum, vitae porta erat maximus.
+ Aliquam erat volutpat.
+ Proin tempus nibh tincidunt quam eleifend venenatis.
 \end_layout
 
 \begin_layout Section*
-Brains and connectivity
+Teoría de Redes
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Etiam et dignissim sem.
+ Nullam maximus ante ac porttitor blandit.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Pellentesque quis quam tincidunt, suscipit sem quis, eleifend ipsum.
+ Integer eget eleifend nisl.
+ Maecenas et vulputate diam.
+ Curabitur luctus consequat fringilla.
+ Etiam pretium ligula et dui interdum, vitae porta erat maximus.
+ Aliquam erat volutpat.
+ Proin tempus nibh tincidunt quam eleifend venenatis.
 \end_layout
 
 \begin_layout Section*
-Connectivity and mathematics
+
+\emph on
+Small-Worlds
 \end_layout
 
-\begin_layout Chapter*
-Introduction
-\end_layout
-
-\begin_layout Section*
-Graph Theory
-\end_layout
-
-\begin_layout Section*
-Network Theory
-\end_layout
-
-\begin_layout Section*
-Small Worlds
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Etiam et dignissim sem.
+ Nullam maximus ante ac porttitor blandit.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Pellentesque quis quam tincidunt, suscipit sem quis, eleifend ipsum.
+ Integer eget eleifend nisl.
+ Maecenas et vulputate diam.
+ Curabitur luctus consequat fringilla.
+ Etiam pretium ligula et dui interdum, vitae porta erat maximus.
+ Aliquam erat volutpat.
+ Proin tempus nibh tincidunt quam eleifend venenatis.
 \end_layout
 
 \begin_layout Subsection*
-Definitions (emphasis on plural)
+Definiciones (énfasis en plural)
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Etiam et dignissim sem.
+ Nullam maximus ante ac porttitor blandit.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Pellentesque quis quam tincidunt, suscipit sem quis, eleifend ipsum.
+ Integer eget eleifend nisl.
+ Maecenas et vulputate diam.
+ Curabitur luctus consequat fringilla.
+ Etiam pretium ligula et dui interdum, vitae porta erat maximus.
+ Aliquam erat volutpat.
+ Proin tempus nibh tincidunt quam eleifend venenatis.
 \end_layout
 
 \begin_layout Subsection*
-Some Results
+Algunos resultados
 \end_layout
 
-\begin_layout Section*
-What we're dealing with
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Etiam et dignissim sem.
+ Nullam maximus ante ac porttitor blandit.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Pellentesque quis quam tincidunt, suscipit sem quis, eleifend ipsum.
+ Integer eget eleifend nisl.
+ Maecenas et vulputate diam.
+ Curabitur luctus consequat fringilla.
+ Etiam pretium ligula et dui interdum, vitae porta erat maximus.
+ Aliquam erat volutpat.
+ Proin tempus nibh tincidunt quam eleifend venenatis.
 \end_layout
 
-\begin_layout Chapter*
+\begin_layout Subsection*
+En el presente trabajo,...
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Etiam et dignissim sem.
+ Nullam maximus ante ac porttitor blandit.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Pellentesque quis quam tincidunt, suscipit sem quis, eleifend ipsum.
+ Integer eget eleifend nisl.
+ Maecenas et vulputate diam.
+ Curabitur luctus consequat fringilla.
+ Etiam pretium ligula et dui interdum, vitae porta erat maximus.
+ Aliquam erat volutpat.
+ Proin tempus nibh tincidunt quam eleifend venenatis.
+\end_layout
+
+\begin_layout Chapter
 Preliminares
 \end_layout
 
@@ -130,12 +216,12 @@ Preliminares
 Convenciones
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Standard
 Antes de comenzar, indicaremos las convenciones de notación que usaremos
  en el resto de nuestra discusión.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Standard
 Si 
 \begin_inset Formula $A$
 \end_inset
@@ -154,7 +240,7 @@ Si
 \end_inset
 
  con los números naturales 
-\begin_inset Formula $1,\,2,\,...,\,\mathscr{|N|}$
+\begin_inset Formula $1,2,...,|N|$
 \end_inset
 
 .
@@ -223,6 +309,14 @@ Si
 \emph on
 vecinos
 \emph default
+ y escribiremos 
+\begin_inset Formula $V(i)$
+\end_inset
+
+ para el conjunto de nodos vecinos de 
+\begin_inset Formula $i$
+\end_inset
+
 .
  Para complicar las cosas, a veces identificaremos también a 
 \begin_inset Formula $G$
@@ -266,7 +360,7 @@ posible
 \emph default
  del grafo.
  Por ejemplo, si 
-\begin_inset Formula $G=(\{1,\,2,\,3\},\,\{(1,2),\,(2,1)\})$
+\begin_inset Formula $G=(\{1,2,3\},\{(1,2),(2,1)\})$
 \end_inset
 
 , son verdaderas las afirmaciones 
@@ -284,7 +378,7 @@ posible
 .
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Standard
 A continuación, definiremos los espacios con los que trabajaremos.
  Llamaremos 
 \begin_inset Formula $\Gamma_{n}$
@@ -342,7 +436,7 @@ Usualmente, identificaremos cada grafo con su matriz de adyacencia.
 \end_inset
 
 , tendremos 
-\begin_inset Formula $a_{ii}=0,\,\forall i=1,\,2,\,...,\,|G|$
+\begin_inset Formula $a_{ii}=0,\,\forall i=1,2,...,|G|$
 \end_inset
 
 .
@@ -354,7 +448,7 @@ Usualmente, identificaremos cada grafo con su matriz de adyacencia.
  binarias.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Standard
 A este último conjunto lo dotaremos de un 
 \begin_inset Formula $\sigma$
 \end_inset
@@ -400,7 +494,7 @@ A este último conjunto lo dotaremos de un
 Definiciones
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Standard
 Pasaremos ahora a definir los elementos sobre los que construiremos los
  modelos que queremos estudiar.
 \end_layout
@@ -527,7 +621,7 @@ Como las entradas
 \end_inset
 
 , y como los nodos 
-\begin_inset Formula $i,\, j,\, k$
+\begin_inset Formula $i,j,k$
 \end_inset
 
  forman un triángulo solo si el producto 
@@ -606,7 +700,7 @@ Definidos nuestro espacio medible y funciones medibles sobre él, pasaremos
  a incluir aleatoriedad en nuestro estudio.
  En lo subsiguiente, supondremos que existe un espacio de probabilidad abstracto
  
-\begin_inset Formula $(\Omega,\,\mathscr{F},\,\mathcal{P})$
+\begin_inset Formula $(\Omega,\mathscr{F},\mathcal{P})$
 \end_inset
 
  que contiene el espacio muestral de todos los resultados posibles de nuestros
@@ -617,7 +711,7 @@ Definidos nuestro espacio medible y funciones medibles sobre él, pasaremos
 Grafos e indicadores aleatorios
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Standard
 Un grafo aleatorio es una variable aleatoria 
 \begin_inset Formula $G:\Omega\longrightarrow\Gamma_{\infty}$
 \end_inset
@@ -655,7 +749,7 @@ Dado un grafo
 , aleatorio o determinístico, definimos
 \begin_inset Formula 
 \[
-T(G)=d(u,\, v)
+T(G)=d(u,v)
 \]
 
 \end_inset
@@ -795,7 +889,7 @@ En el caso en que
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Standard
 diremos que 
 \begin_inset Formula $Q(G_{n})$
 \end_inset
@@ -939,14 +1033,14 @@ si
 \begin_inset Formula $deg(G_{n})$
 \end_inset
 
-.
+,
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\exists\mathrm{a_{2}}>0:\, c_{i}\geq\mathrm{a_{2}},\,\forall i\in G_{n}\,\forall n=1,\,2,\,...,\,\infty.$
+\begin_inset Formula $\exists\mathrm{a_{2}}>0:\, c_{i}\geq\mathrm{a_{2}},\,\forall i\in G_{n}\,\forall n=1,2,...,\infty$
 \end_inset
 
-
+,
 \end_layout
 
 \begin_layout Enumerate
@@ -969,12 +1063,12 @@ Si el modelo
  en probabilidad o casi ciertamente.
 \end_layout
 
-\begin_layout Chapter*
+\begin_layout Chapter
 El modelo 
 \emph on
 small-world 
 \emph default
-de Cont and Tanimura
+de Cont y Tanimura
 \end_layout
 
 \begin_layout Section*
@@ -1009,7 +1103,7 @@ Construcción
 
 \begin_layout Standard
 Fijemos los números 
-\begin_inset Formula $n,\,\delta,\, M\in\mathbb{N}$
+\begin_inset Formula $n,\delta,M\in\mathbb{N}$
 \end_inset
 
  con 
@@ -1034,11 +1128,11 @@ Fijemos los números
 
 \begin_layout Enumerate
 Particionamos los nodos 
-\begin_inset Formula $1,\,2,\,...,\, n$
+\begin_inset Formula $1,2,...,n$
 \end_inset
 
  en M conjuntos disjuntos, 
-\begin_inset Formula $G^{1},\, G^{2},\,...,\, G^{M}$
+\begin_inset Formula $G^{1},G^{2},...,G^{M}$
 \end_inset
 
 , con 
@@ -1065,7 +1159,7 @@ comunidad de origen del nodo i.
 
  lo unimos con una arista a cada nodo que tenga la misma comunidad de origen:
  
-\begin_inset Formula $i,\, j\in G^{k}\Longrightarrow(i,j)\in G$
+\begin_inset Formula $i,j\in G^{k}\Longrightarrow(i,j)\in G$
 \end_inset
 
 .
@@ -1077,12 +1171,12 @@ Para cada
 \end_inset
 
 , sean las variables aleatorias 
-\begin_inset Formula $X_{i}:\Omega\longrightarrow\{G^{1},\, G^{2},\,...,\, G^{M}\}$
+\begin_inset Formula $X_{i}:\Omega\longrightarrow\{G^{1},G^{2},...,G^{M}\}$
 \end_inset
 
 , independientes e indénticamente distribuidas de manera uniforme sobre
  el conjunto de comunidades, 
-\begin_inset Formula $X_{i}\sim U(G^{1},\, G^{2},\,...,\, G^{M})$
+\begin_inset Formula $X_{i}\sim U(G^{1},G^{2},...,G^{M})$
 \end_inset
 
 .
@@ -1108,6 +1202,27 @@ Para cada
 comunidad secundaria o de destino del nodo i.
  
 \emph default
+A veces diremos que el nodo 
+\begin_inset Formula $i$
+\end_inset
+
+
+\emph on
+ escoge 
+\emph default
+
+\begin_inset Formula $X_{k}$
+\end_inset
+
+
+\emph on
+ 
+\emph default
+como destino
+\emph on
+.
+ 
+\emph default
 Para cada 
 \begin_inset Formula $i$
 \end_inset
@@ -1126,7 +1241,7 @@ Para cada
 
 \begin_layout Enumerate
 Si los nodos 
-\begin_inset Formula $i,\, j$
+\begin_inset Formula $i,j$
 \end_inset
 
  cumplen 
@@ -1168,13 +1283,13 @@ Podemos describir la construcción de
 
  de la siguiente manera.
  Dado 
-\begin_inset Formula $m=1,\,2,\,...,\, M$
+\begin_inset Formula $m=1,2,...,M$
 \end_inset
 
 , sea 
 \begin_inset Formula 
 \[
-A^{m}=G^{m}\bigcup\{i:\, X_{i}=G^{m}\}
+A^{m}=G^{m}\cup\{i:\, X_{i}=G^{m}\}
 \]
 
 \end_inset
@@ -1183,11 +1298,11 @@ A^{m}=G^{m}\bigcup\{i:\, X_{i}=G^{m}\}
 \end_layout
 
 \begin_layout Standard
-el conjunto de los nodos para los que 
+el conjunto de los nodos que tienen 
 \begin_inset Formula $G^{m}$
 \end_inset
 
- es su comunidad de origen o de destino.
+ como comunidad de origen o de destino.
  Entonces,
 \begin_inset Formula 
 \[
@@ -1215,7 +1330,7 @@ De esta manera, podemos ver a
  que están unidos de manera aleatoria.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Standard
 Hecha la misma construcción para cada 
 \begin_inset Formula $n$
 \end_inset
@@ -1241,11 +1356,16 @@ El modelo
 small-world.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Standard
 La demostración la dividimos en tres partes, una para cada característica
  propia de los grafos 
 \emph on
 small-world.
+ 
+\emph default
+Los resultados propios del grado y el coeficiente de agrupación local correspond
+en a las Proposiciones 1 y 2, respectivamente.
+ El estudio de la distancia típica abarca las Proposiciones 3 y 4.
 \end_layout
 
 \begin_layout Proposition
@@ -1253,7 +1373,7 @@ El grado esperado del modelo está acotado superiormente por
 \begin_inset Formula $4\delta-1$
 \end_inset
 
-, para n suficientemente grande.
+.
 \end_layout
 
 \begin_layout Proof
@@ -1290,7 +1410,7 @@ Por ser las variables
  y uniformes, tenemos
 \begin_inset Formula 
 \[
-P(S_{1}=x_{1},\, S_{2}=x_{2},\,...,\, S_{M}=x_{M})=\begin{cases}
+P(S_{1}=x_{1},S_{2}=x_{2},...,S_{M}=x_{M})=\begin{cases}
 \frac{n!}{x_{1}!x_{2}!...x_{M}!}(\frac{1}{M})^{n}, & \underset{k=1}{\overset{M}{\sum}}x_{k}=n\\
 0, & otherwise
 \end{cases},
@@ -1303,14 +1423,14 @@ P(S_{1}=x_{1},\, S_{2}=x_{2},\,...,\, S_{M}=x_{M})=\begin{cases}
 
 \begin_layout Proof
 i.e., el vector 
-\begin_inset Formula $(S_{1},\, S_{2},\,...,S_{M})$
+\begin_inset Formula $(S_{1},S_{2},...,S_{M})$
 \end_inset
 
  tiene distribución multinomial.
  Entonces, tenemos
 \begin_inset Formula 
 \[
-\mathsf{E}[S_{m}]=\frac{n}{M}=\delta,\quad\mathsf{Var}[S_{m}]=\frac{n}{M}\big(1-\frac{1}{M}\big)=\delta\big(1-\frac{1}{M}\big),\quad E[S_{m}^{2}]=\delta\big(1-\frac{1}{M}\big)+\delta^{2}
+\mathsf{E}[S_{m}]=\frac{n}{M}=\delta,\quad\mathsf{Var}[S_{m}]=\frac{n}{M}\big(1-\frac{1}{M}\big)=\delta\big(1-\frac{1}{M}\big),\quad\mathsf{E}[S_{m}^{2}]=\delta\big(1-\frac{1}{M}\big)+\delta^{2}
 \]
 
 \end_inset
@@ -1343,87 +1463,1042 @@ Finalmente,
 \end_layout
 
 \begin_layout Proposition
-El coeficiente de aglomeración local cumple 
-\begin_inset Formula $c_{i}\geq\frac{1}{2}-\frac{1}{\delta-1},\,\forall i\in G_{n}\forall n$
+En el modelo 
+\begin_inset Formula $(G_{n})_{n=1}^{\infty}$
 \end_inset
 
-, siempre y cuando 
-\begin_inset Formula $\delta>3$
+, el coeficiente de agrupación local cumple 
+\begin_inset Formula 
+\[
+c_{i}\geq\frac{1}{2}-\frac{1}{\delta-1},\,\forall i\in G_{n},\forall n=1,2,....
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Proof
-foo bar baz
+Fijado un nodo 
+\begin_inset Formula $i$
+\end_inset
+
+, sean 
+\begin_inset Formula $G^{j}$
+\end_inset
+
+ y 
+\begin_inset Formula $G^{k}$
+\end_inset
+
+ sus comunidades de origen y destino, respectivamente.
+ Entonces, podemos particionar 
+\begin_inset Formula $G(i)$
+\end_inset
+
+ de la siguiente manera:
+\begin_inset Formula 
+\[
+G(i)=(G^{j}\cup\{u:\, X_{u}=G^{j}\})\setminus\{i\}\bigcup(G^{k}\cup\{u:\, X_{u}=G^{k}\})\setminus\{i\}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Ambos conjuntos tienen al menos 
+\begin_inset Formula $\delta-1$
+\end_inset
+
+ nodos.
+ Aplicando el Lema 1 del Apéndice A, con 
+\begin_inset Formula $l=2$
+\end_inset
+
+, 
+\begin_inset Formula $h\geq\delta-1$
+\end_inset
+
+, tenemos
+\begin_inset Formula 
+\[
+c_{i}\geq\frac{1}{2}-\frac{1}{\delta-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+Para que el model sea 
+\emph on
+small-world, 
+\emph default
+necesitamos que cada 
+\begin_inset Formula $c_{i}>0$
+\end_inset
+
+.
+ Claramente, esto ocurrirá en el modelo simplificado cuando 
+\begin_inset Formula $\delta\geq3$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Proposition
-La distancia típica tiene cota superior casi cierta 
-\begin_inset Formula $f(n)=6\log(n)$
+En el modelo 
+\begin_inset Formula $(G_{n})_{n}^{\infty}$
+\end_inset
+
+, cuando 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+, es cada vez más probable que podamos alcanzar por lo menos la mitad de
+ los nodos en un número logarítmico de pasos, habiendo empezado desde un
+ nodo arbitrario.
+\end_layout
+
+\begin_layout Proposition
+Concretamente, para 
+\begin_inset Formula $n$
+\end_inset
+
+ suficientemente grande, sea un nodo 
+\begin_inset Formula $u\in G_{n}$
+\end_inset
+
+.
+ Entonces, existe un conjunto de nodos 
+\begin_inset Formula $\overline{S}(u,n)\subseteq G_{n}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $|\overline{S}|\geq\frac{n}{2}$
+\end_inset
+
+ y además, si 
+\begin_inset Formula $v\in\overline{S}$
+\end_inset
+
+, entonces
+\begin_inset Formula 
+\[
+P(d(u,v)\leq4\log(n)+4)\geq1-\frac{1}{\delta^{2}n^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Fijamos 
+\begin_inset Formula $n$
+\end_inset
+
+ para el resto de nuestro argumento.
+ Probaremos que, si empezamos desde una comunidad arbitraria, digamos 
+\begin_inset Formula $G^{1}$
+\end_inset
+
+, podemos alcanzar al menos la mitad de las demás comunidades.
+ Como cada comunidad es un subgrafo completo y todas ellas tienen el mismo
+ número 
+\begin_inset Formula $\delta$
+\end_inset
+
+ de nodos, esto probará la Proposición.
+ En lo subsiguiente, identificaremos el conjunto de comunidades 
+\begin_inset Formula $\{G^{1},G^{2},...,G^{M}\}$
+\end_inset
+
+ con el conjunto de números 
+\begin_inset Formula $\{1,2,...,M\}$
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Proof
-foo bar baz
+Definimos el proceso de descubrimiento de comunidades 
+\begin_inset Formula $C_{k},N_{k}$
+\end_inset
+
+, empezando desde 
+\begin_inset Formula $G^{1}\equiv1$
+\end_inset
+
+, recursivamente.
+ 
+\begin_inset Formula 
+\[
+C_{0}=\{1\},\qquad N_{k}=\{i\in G_{n}:\:\exists d\in C_{k},\: i\in d\}=\underset{d\in C_{k}}{\bigcup}G^{d}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C_{k}=\{G\notin\underset{l=0}{\overset{k-1}{\bigcup}}C_{l}:\,\exists j\in N_{k-1},\, X_{j}=G\},\ k=0,1,...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+En palabras, 
+\begin_inset Formula $C_{k}$
+\end_inset
+
+ es el conjunto de comunidades que se pueden alcanzar en, como mucho, 
+\begin_inset Formula $k$
+\end_inset
+
+ pasos; mientras que 
+\begin_inset Formula $N_{k}$
+\end_inset
+
+ es el conjunto de nodos de estas comunidades.
+ Notamos que los 
+\begin_inset Formula $C_{k}$
+\end_inset
+
+ son disjuntos dos a dos.
+\end_layout
+
+\begin_layout Proof
+También definimos los eventos
+\begin_inset Formula 
+\[
+E_{k}=\{|C_{k}|\geq3|C_{k-1}|\},\ k=1,2,...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $E_{k}$
+\end_inset
+
+ implica que el número de comunidades que alcanzamos en el último paso es
+ al menos tres veces mayor que el número anterior.
+ 
+\begin_inset Formula $\underset{m=1}{\overset{l}{\bigcap}}E_{m}$
+\end_inset
+
+ implica que hemos descubierto comunidades a una velocidad exponencial,
+ con base 3, hasta el 
+\begin_inset Formula $l$
+\end_inset
+
+-ésimo paso.
+\end_layout
+
+\begin_layout Proof
+Ahora, estamos interesados en estimar la probabilidad de descubrir nuevas
+ comunidades a una velocidad exponencial hasta descubrir al menos la mitad
+ de ellas.
+ Para ello, definimos los tiempos de parada
+\begin_inset Formula 
+\[
+\tau_{u}=\min\{t\in\mathbb{N}:\,\underset{j=0}{\overset{t}{\sum}}|C_{j}|\geq u\},\ u=1,2,...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Para un 
+\begin_inset Formula $T$
+\end_inset
+
+ dado, estimamos la probabilidad 
+\begin_inset Formula $P(\underset{j=1}{\overset{T}{\cap}}E_{k})=\underset{j=1}{\overset{T}{\prod}}P(E_{k}|\underset{m=1}{\overset{j-1}{\cap}}E_{m})$
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Donde tomamos la convención 
+\begin_inset Formula $P(E_{1}|\underset{m=1}{\overset{m=0}{\cap}}E_{m})=P(E_{1})$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ Estudiamos el lado derecho de la igualdad, para cada 
+\begin_inset Formula $j$
+\end_inset
+
+, según tres casos distintos: 
+\begin_inset Formula $j=1$
+\end_inset
+
+, 
+\begin_inset Formula $2\leq j\leq\tau_{\sqrt{M}}$
+\end_inset
+
+ y 
+\begin_inset Formula $\tau_{\sqrt{M}}<j\leq\tau_{\frac{M}{2}}$
+\end_inset
+
+.
+ Queremos encontrar que estas probabilidades son cada vez más grandes.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $j=1$
+\end_inset
+
+ 
+\color black
+Estimamos la probabilidad 
+\begin_inset Formula $P(E_{1}^{c})=P(|C_{1}|\leq2)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\{|C_{1}|\leq2\}$
+\end_inset
+
+ ocurre cuando todos los nodos de 
+\begin_inset Formula $G^{1}$
+\end_inset
+
+ eligieron como comunidades secundarias a 
+\begin_inset Formula $\{1,k_{1},k_{2}\}$
+\end_inset
+
+, para algún par 
+\begin_inset Formula $k_{1},k_{2}$
+\end_inset
+
+.
+ Tenemos 
+\begin_inset Formula 
+\[
+\{|C_{1}|\leq2\}=\underset{k_{1},k_{2}\in\{1,2,...,M\},k_{1}\neq k_{2}}{\bigcup}\{X_{i}\in\{1,k_{1},k_{2}\},\forall i\in G^{1}\}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P(|C_{1}|\leq2)\leq\underset{k_{1}\neq k_{2}}{\sum}P(X_{i}\in\{1,k_{1},k_{2}\},\forall i\in G^{1})
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P(|C_{1}|\leq2)\leq\underset{k_{1}\neq k_{2}}{\sum}\underset{i=1}{\overset{|G^{1}|}{\prod}}P(X_{i}\in\{1,k_{1},k_{2}\})=\binom{M}{2}\big(\frac{3}{M}\big)^{\delta}=\frac{3^{\delta}}{2}\frac{M-1}{M^{\delta-1}}\le\frac{3^{\delta}}{M^{\delta-2}}.
+\]
+
+\end_inset
+
+Escogemos 
+\begin_inset Formula $\delta\geq6$
+\end_inset
+
+ y 
+\begin_inset Formula $M$
+\end_inset
+
+ suficientemente grande tal que 
+\begin_inset Formula $\frac{3^{\delta}}{M^{\delta-2}}\leq\frac{1}{M^{3}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $2\leq j\leq\tau_{\sqrt{M}}$
+\end_inset
+
+ 
+\color red
+POR PROBAR
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\tau_{\sqrt{M}}<j\leq\tau_{\frac{M}{2}}$
+\end_inset
+
+ 
+\color red
+POR PROBAR
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+Conseguida esta cota, pasamos a acotar 
+\begin_inset Formula $P(\tau_{\frac{M}{2}}\geq\log(M))$
+\end_inset
+
+.
+ Queremos que esta probadilidad sea cada vez más pequeña.
+\end_layout
+
+\begin_layout Proof
+Definamos 
+\begin_inset Formula $L=\min\{t\in\mathbb{N}:\, e^{t}\geq\frac{M}{2}\}<\log(M)+1$
+\end_inset
+
+ y el tiempo de parada acotado 
+\begin_inset Formula $T=\min\{L,\tau_{\frac{M}{2}}\}$
+\end_inset
+
+.
+ Tenemos que
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+el evento 
+\begin_inset Formula $\underset{m=1}{\overset{L}{\bigcap}}E_{m}$
+\end_inset
+
+ implica 
+\begin_inset Formula $|C_{L}|>e^{L}\geq\frac{M}{2}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Itemize
+el evento 
+\begin_inset Formula $\{j\leq\tau_{\frac{M}{2}}\}\cap\underset{m=1}{\overset{j}{\bigcap}}E_{m}$
+\end_inset
+
+ implica 
+\begin_inset Formula $|C_{j-1}|<\frac{M}{2}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Itemize
+el evento 
+\begin_inset Formula $\underset{m=1}{\overset{T}{\bigcap}}E_{m}$
+\end_inset
+
+ implica 
+\begin_inset Formula $L\geq\tau_{\frac{M}{2}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+Con todo, tenemos
+\begin_inset Formula 
+\[
+P(L\geq\tau_{\frac{M}{2}})\geq P(\underset{m=1}{\overset{T}{\bigcap}}E_{m})=\underset{j=1}{\overset{T}{\prod}}P(E_{k}|\underset{m=1}{\overset{j-1}{\cap}}E_{m})\geq(1-\frac{1}{M^{3}})^{T}\geq(1-\frac{1}{M^{3}})^{\log(M)+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Para concluir, usamos el Lema 2 del Apéndice A, con 
+\begin_inset Formula $f(M)=M^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $g(M)=\log(M)$
+\end_inset
+
+.
+ Tenemos, para 
+\begin_inset Formula $M$
+\end_inset
+
+ suficientemente grande, 
+\begin_inset Formula 
+\[
+P(\tau_{\frac{M}{2}}<\log(M)+1)\leq P(\tau_{\frac{M}{2}}>L)\leq1-(1-\frac{1}{M^{3}})^{\log(M)+1}\leq\frac{\log(M)+1}{M^{3}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Finalmente, definimos el conjunto de comunidades 
+\begin_inset Formula $S=\underset{j=0}{\overset{\tau_{\frac{M}{2}}}{\bigcup}}C_{j}$
+\end_inset
+
+, que cumple 
+\begin_inset Formula $|S|\geq\frac{M}{2}$
+\end_inset
+
+, por definición de 
+\begin_inset Formula $\tau_{\frac{M}{2}}$
+\end_inset
+
+.
+ Ahora bien, 
+\begin_inset Formula $\tau_{\frac{M}{2}}<\log(M)+1$
+\end_inset
+
+ implica
+\begin_inset Formula 
+\[
+\forall G,G'\in S:\, d(G,G')\leq d(G,S)+d(S,G')\leq2\log(M)+2.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Por lo tanto,
+\begin_inset Formula 
+\[
+P(d(G,G')\leq2\log(M)+2)\geq P(\tau_{\frac{M}{2}}\leq\log(M)+1)\geq1-\frac{\log(M)+1}{M^{3}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Basta tomar los nodos 
+\begin_inset Formula $\overline{S}=\underset{G\in S}{\bigcup}G$
+\end_inset
+
+, un 
+\begin_inset Formula $M=n\times\delta$
+\end_inset
+
+ grande para el cual 
+\begin_inset Formula $\frac{\log(M)+1}{M^{3}}\leq\frac{1}{M^{2}}$
+\end_inset
+
+ y observar que si 
+\begin_inset Formula $u\in G,\, v\in G'$
+\end_inset
+
+, entonces 
+\begin_inset Formula $d(u,v)\leq2d(G,G')$
+\end_inset
+
+, para obtener
+\begin_inset Formula 
+\[
+P(d(u,v)\leq4\log(n)+4)\geq1-\frac{1}{\delta^{2}n^{2}},\ \forall u,v\in\overline{S}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+La distancia típica en 
+\begin_inset Formula $(G_{n})_{n=1}^{\infty}$
+\end_inset
+
+ cumple
+\begin_inset Formula 
+\[
+P(\underset{n\rightarrow\infty}{\limsup}\frac{T(G_{n})}{O(\log(n))}\leq1)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+donde 
+\begin_inset Formula $O(\log(n))$
+\end_inset
+
+ es una función lineal de 
+\begin_inset Formula $\log(n)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Sean 
+\begin_inset Formula $u,v$
+\end_inset
+
+ nodos elegidos de manera uniforme en 
+\begin_inset Formula $G\times G\setminus\{(i,i):\, i\in G\}$
+\end_inset
+
+, 
+\begin_inset Formula $G^{u}$
+\end_inset
+
+ y 
+\begin_inset Formula $G^{v}$
+\end_inset
+
+ sus comunidades de origen, y sean 
+\begin_inset Formula $S_{u}=\underset{j=1}{\overset{\tau_{\frac{M}{2}}^{u}}{\bigcup}}C_{j}^{u}$
+\end_inset
+
+, 
+\begin_inset Formula $S_{v}=\underset{j=1}{\overset{\tau_{\frac{M}{2}}^{v}}{\bigcup}}C_{j}^{v}$
+\end_inset
+
+, donde 
+\begin_inset Formula $C_{j}^{u}$
+\end_inset
+
+, 
+\begin_inset Formula $C_{j}^{v}$
+\end_inset
+
+ son los conjuntos de todas las comunidades que se pueden alcanzar en, como
+ mucho, 
+\begin_inset Formula $j$
+\end_inset
+
+ pasos, a partir desde 
+\begin_inset Formula $G^{u}$
+\end_inset
+
+, 
+\begin_inset Formula $G^{v}$
+\end_inset
+
+, respectivamente.
+ Ahora bien, 
+\begin_inset Formula $S_{u}\cap S_{v}\neq\emptyset$
+\end_inset
+
+ pues 
+\begin_inset Formula $|S_{u}|+|S_{v}|\geq M$
+\end_inset
+
+.
+ Entonces, sea 
+\begin_inset Formula $l\in S_{u}\cap S_{v}$
+\end_inset
+
+.
+ Tenemos
+\begin_inset Formula 
+\[
+d(u,v)\leq d(u,l)+d(l,v).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+De la proposición anterior, tenemos que, si 
+\begin_inset Formula $n$
+\end_inset
+
+ es suficientemente grande, entonces 
+\begin_inset Formula $P(d(u,v)>8\log(n)+8)\leq\frac{2}{\delta^{2}n^{2}}.$
+\end_inset
+
+ En consecuencia,
+\begin_inset Formula 
+\[
+\underset{n=1}{\overset{\infty}{\sum}}P(\frac{d(u,v)}{O(\log(n))}>1)<\infty.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Donde 
+\begin_inset Formula $O(\log(n))=8\log(n)+8$
+\end_inset
+
+ es una función lineal de 
+\begin_inset Formula $\log(n)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Por el Lema de Borel-Cantelli, tenemos 
+\begin_inset Formula 
+\[
+P(\underset{n\to\infty}{\limsup}\frac{d(u,v)}{O(\log(n))}>1)=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Es decir,
+\begin_inset Formula 
+\[
+P(\underset{n\to\infty}{\limsup}\frac{T(G_{n})}{O(\log(n))}\leq1)=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Con esto, hemos probado la Afirmación 1, con lo que el modelo es 
+\emph on
+small-world.
+ 
+\emph default
+Sin embargo, Cont y Tanimura mejoran su resultado, con la siguiente proposición
+\emph on
+.
+\end_layout
+
+\begin_layout Proposition
+El diámetro cumple
+\begin_inset Formula 
+\[
+P(\underset{n\to\infty}{\limsup}\frac{diam(G_{n})}{O(\log(n))}\leq1)=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\color red
+POR PROBAR
 \end_layout
 
 \begin_layout Section*
-Generalized model
+Modelo generalizado
 \end_layout
 
 \begin_layout Standard
-lorem ipsum
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Etiam et dignissim sem.
+ Nullam maximus ante ac porttitor blandit.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Pellentesque quis quam tincidunt, suscipit sem quis, eleifend ipsum.
+ Integer eget eleifend nisl.
+ Maecenas et vulputate diam.
+ Curabitur luctus consequat fringilla.
+ Etiam pretium ligula et dui interdum, vitae porta erat maximus.
+ Aliquam erat volutpat.
+ Proin tempus nibh tincidunt quam eleifend venenatis.
 \end_layout
 
-\begin_layout Standard
-lorem ipsum
+\begin_layout Chapter
+\start_of_appendix
+Algunos resultados
 \end_layout
 
-\begin_layout Standard
-lorem ipsum
+\begin_layout Lemma
+Sea 
+\begin_inset Formula $G\in\Gamma_{n}$
+\end_inset
+
+ un grafo arbitrario y sean 
+\begin_inset Formula $i\in G$
+\end_inset
+
+ un nodo y 
+\begin_inset Formula $G(i)=G\cap(V(i)\times V(i))$
+\end_inset
+
+ el subgrafo de 
+\begin_inset Formula $G$
+\end_inset
+
+ que contiene todos los vecinos de 
+\begin_inset Formula $i$
+\end_inset
+
+, pero no 
+\begin_inset Formula $i$
+\end_inset
+
+, y todas las aristas entre ellos.
+ Supongamos que 
+\begin_inset Formula $G(i)$
+\end_inset
+
+ se puede particionar en 
+\begin_inset Formula $l$
+\end_inset
+
+ subgrafos completos disjuntos.
+ Entonces, se cumple
+\begin_inset Formula 
+\[
+c_{i}\geq\frac{1}{l}-\frac{1}{h},
+\]
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-lorem ipsum
+\begin_layout Lemma
+donde 
+\begin_inset Formula $h$
+\end_inset
+
+ es el número de nodos en el subgrafo más pequeño de 
+\begin_inset Formula $G(i)$
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Standard
-lorem ipsum
+\begin_layout Proof
+Consideremos tal partición y pongamos 
+\begin_inset Formula $q_{1},q_{2},...,q_{l}$
+\end_inset
+
+ para el número de nodos en cada subgrafo completo de 
+\begin_inset Formula $G(i)$
+\end_inset
+
+.
+ Tenemos 
+\begin_inset Formula $a=\underset{j=1}{\overset{l}{\sum}}\frac{q_{j}(q_{j}-1)}{2}$
+\end_inset
+
+ aristas en 
+\begin_inset Formula $G(i)$
+\end_inset
+
+, mientras que el número total de posibles aristas es 
+\begin_inset Formula $t=\frac{(\underset{j=1}{\overset{l}{\sum}}q_{j})(-1+\underset{j=1}{\overset{l}{\sum}}q_{j})}{2}$
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Standard
-lorem ipsum
+\begin_layout Proof
+Luego,
+\begin_inset Formula 
+\[
+c_{i}\geq\frac{a}{t}\geq\frac{\underset{j}{\sum}q_{j}(q_{j}-1)}{(\underset{j}{\sum}q_{j})^{2}}\geq\overset{\mathcal{A}}{\overbrace{\frac{\underset{j}{\sum}q_{j}^{2}}{(\underset{j}{\sum}q_{j})^{2}}}}-\overset{\mathcal{B}}{\overbrace{\frac{\underset{j}{\sum}q_{j}}{\underset{j}{\sum}q_{j}^{2}}}}.
+\]
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-lorem ipsum
+\begin_layout Proof
+Tenemos para 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+, usando 
+\begin_inset Formula $2q_{j}q_{k}\leq q_{k}^{2}+q_{j}^{2}$
+\end_inset
+
+,
 \end_layout
 
-\begin_layout Standard
-lorem ipsum
+\begin_layout Proof
+\begin_inset Formula 
+\[
+(\underset{j}{\sum}q_{j})^{2}\leq\underset{j}{\sum}q_{j}^{2}+\frac{1}{2}\underset{k\neq j}{\overset{l}{\sum}}(q_{k}^{2}+q_{j}^{2})=\underset{j}{\sum}q_{j}^{2}+\frac{1}{2}\underset{k\neq j}{\overset{l}{\sum}}q_{k}^{2}+\frac{1}{2}\underset{k\neq j}{\overset{l}{\sum}}q_{j}^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+(\underset{j}{\sum}q_{j})^{2}\leq\underset{j}{\sum}q_{j}^{2}+(l-1)\underset{j}{\sum}q_{j}^{2}=l\underset{j}{\sum}q_{j}^{2}.
+\]
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-lorem ipsum
+\begin_layout Proof
+Es decir, 
+\begin_inset Formula $\mathcal{A}\geq\frac{1}{l}$
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Standard
-lorem ipsum
+\begin_layout Proof
+Por otro lado, notamos que 
+\begin_inset Formula $\underset{j}{\sum}hq_{j}\leq\underset{j}{\sum}q_{j}^{2}$
+\end_inset
+
+, ó 
+\begin_inset Formula $\mathcal{B}\leq\frac{1}{h}$
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Standard
-lorem ipsum
+\begin_layout Proof
+Finalmente, 
+\begin_inset Formula $c_{i}\geq\frac{1}{l}-\frac{1}{h}$
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Standard
-lorem ipsum
+\begin_layout Lemma
+Sean 
+\begin_inset Formula $f(n)$
+\end_inset
+
+, 
+\begin_inset Formula $g(n)$
+\end_inset
+
+ dos funciones tal que 
+\begin_inset Formula $\underset{n\to\infty}{\lim}f(n)=\underset{n\to\infty}{\lim}g(n)=\infty$
+\end_inset
+
+, donde 
+\begin_inset Formula $g(n)$
+\end_inset
+
+ es no decreciente.
+ Supongamos que 
+\begin_inset Formula $\underset{n\to\infty}{\lim}h(n)=\frac{f(n)}{g(n)}=0$
+\end_inset
+
+.
+ Entonces, existe un 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ tal que
+\begin_inset Formula 
+\[
+\forall n\geq n_{0}:\,(1-\frac{1}{f(n)})^{g(n)}\geq1-\frac{g(n)}{f(n)}.
+\]
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-lorem ipsum
+\begin_layout Proof
+Dado, 
+\begin_inset Formula $i\in\mathbb{N}$
+\end_inset
+
+, tenemos 
+\begin_inset Formula $g(n)^{i}\geq g(n)$
+\end_inset
+
+ y además,
+\begin_inset Formula 
+\[
+\frac{-g(n)}{i\, f(n)^{i}}\geq\frac{-g(n)^{i}}{i\, f(n)^{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+g(n)\underset{i=1}{\overset{\infty}{\sum}}\frac{(-1)^{i+1}}{i}\big(\frac{-1}{f(n)}\big)^{i}\geq\underset{i=1}{\overset{\infty}{\sum}}\frac{(-1)^{i+1}}{i}\big(\frac{-g(n)}{f(n)}\big)^{i}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Para algún 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+, tendremos 
+\begin_inset Formula $f(n)>g(n)>1$
+\end_inset
+
+.
+ Luego,
+\begin_inset Formula 
+\[
+g(n)\log(1-\frac{1}{f(n)})\geq\log(1-\frac{g(n)}{f(n)})
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+(1-\frac{1}{f(n)})^{g(n)}\ge1-\frac{g(n)}{f(n)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Derivación de la media y varianza de la distribución multinomial.
+\end_layout
+
+\begin_layout Proof
+
+\color red
+POR PROBAR
+\end_layout
+
+\begin_layout Lemma
+Borel-Cantelli.
+\end_layout
+
+\begin_layout Proof
+
+\color red
+POR PROBAR
 \end_layout
 
 \end_body
