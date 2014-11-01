@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     51573,       1226]
-NotebookOptionsPosition[     49023,       1131]
-NotebookOutlinePosition[     49402,       1148]
-CellTagsIndexPosition[     49359,       1145]
+NotebookDataLength[     55983,       1366]
+NotebookOptionsPosition[     52890,       1253]
+NotebookOutlinePosition[     53269,       1270]
+CellTagsIndexPosition[     53226,       1267]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1126,7 +1126,129 @@ Cell[BoxData["0.047619047619047616`"], "Output",
 }, Open  ]]
 }, Open  ]]
 }, Closed]]
-}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Matching Pennies", "Subtitle",
+ CellChangeTimes->{{3.620237091902081*^9, 3.6202371140531673`*^9}}],
+
+Cell["\<\
+Start with the empty graph. At every timestep, every node choose a strategy \
+for matching pennies, and two are chosen at random. They play and if the win \
+(both get +1), then an edge is placed joining them. The game is played until \
+a previously fixed target degree k is achieved by one player.\
+\>", "Text",
+ CellChangeTimes->{{3.620237116622136*^9, 3.620237187189423*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Get", "[", "\"\</home/leo/thesis/code/graphs.m\>\"", "]"}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.620237757262164*^9, 3.6202377729569407`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Code", "Section",
+ CellChangeTimes->{{3.6202380250624437`*^9, 3.620238025734405*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"step", "[", 
+   RowBox[{"graph_", ",", "strategies_"}], "]"}], ":=", "\[IndentingNewLine]", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"h", ",", "k"}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"h", ",", "k"}], "}"}], "=", 
+      RowBox[{"RandomSample", "[", 
+       RowBox[{
+        RowBox[{"Range", "@", "n"}], ",", "2"}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"newedge", "=", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+         "strategies", "\[LeftDoubleBracket]", "h", "\[RightDoubleBracket]"}],
+          "\[Equal]", 
+         RowBox[{
+         "strategies", "\[LeftDoubleBracket]", "k", 
+          "\[RightDoubleBracket]"}]}], ",", 
+        RowBox[{"{", 
+         RowBox[{"h", "\[UndirectedEdge]", "k"}], "}"}], ",", 
+        RowBox[{"{", "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Graph", "[", 
+      RowBox[{
+       RowBox[{"VertexList", "@", "graph"}], ",", 
+       RowBox[{"getSimpleGraphEdges", "@", 
+        RowBox[{"Join", "[", 
+         RowBox[{
+          RowBox[{"EdgeList", "@", "graph"}], ",", "newedge"}], "]"}]}]}], 
+      "]"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.6202374712553053`*^9, 3.620237513863549*^9}, {
+  3.6202375490650387`*^9, 3.620237572214188*^9}, {3.6202377784159603`*^9, 
+  3.620237780975691*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Play", "Section",
+ CellChangeTimes->{{3.62023803083064*^9, 3.620238031157765*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"n", "=", "50"}], ";", 
+  RowBox[{
+   SubscriptBox["k", "t"], "=", "25"}], ";"}]], "Input",
+ CellChangeTimes->{{3.62023719508528*^9, 3.620237198894825*^9}, {
+  3.62023770693218*^9, 3.620237730458911*^9}, {3.62023800505759*^9, 
+  3.620238018114347*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"graph", "=", 
+   RowBox[{"Graph", "[", 
+    RowBox[{
+     RowBox[{"Range", "@", "n"}], ",", 
+     RowBox[{"{", "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.620237190433722*^9, 3.6202372385044107`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NestWhile", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"step", "[", 
+     RowBox[{"#", ",", 
+      RowBox[{"RandomInteger", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}], ",", "n"}], "]"}]}], "]"}], "&"}], 
+   ",", "graph", ",", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Length", "@", 
+      RowBox[{"Select", "[", 
+       RowBox[{
+        RowBox[{"VertexDegree", "[", "#", "]"}], ",", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"#", "\[GreaterEqual]", 
+           SubscriptBox["k", "t"]}], "&"}], ")"}]}], "]"}]}], "\[Equal]", 
+     "0"}], "&"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.620237872808354*^9, 3.620237994875061*^9}}],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{{3.620237882703133*^9, 3.620237905502202*^9}, {
+   3.6202379534226923`*^9, 3.620238012141592*^9}, 3.6202380854621353`*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1918, 1053},
@@ -1153,43 +1275,43 @@ Cell[684, 25, 250, 5, 38, "Text"],
 Cell[CellGroupData[{
 Cell[959, 34, 120, 1, 65, "Subtitle"],
 Cell[CellGroupData[{
-Cell[1104, 39, 126, 3, 200, "Section"],
-Cell[1233, 44, 261, 7, 72, "Input"],
-Cell[1497, 53, 3232, 94, 416, "Input"],
-Cell[4732, 149, 282, 7, 72, "Input"]
+Cell[1104, 39, 126, 3, 250, "Section"],
+Cell[1233, 44, 261, 7, 90, "Input"],
+Cell[1497, 53, 3232, 94, 520, "Input"],
+Cell[4732, 149, 282, 7, 90, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5051, 161, 91, 1, 200, "Section"],
-Cell[5145, 164, 134, 3, 72, "Input"],
-Cell[5282, 169, 401, 13, 72, "Input"],
-Cell[5686, 184, 229, 5, 72, "Input"],
+Cell[5051, 161, 91, 1, 250, "Section"],
+Cell[5145, 164, 134, 3, 90, "Input"],
+Cell[5282, 169, 401, 13, 90, "Input"],
+Cell[5686, 184, 229, 5, 90, "Input"],
 Cell[CellGroupData[{
-Cell[5940, 193, 326, 9, 72, "Input"],
-Cell[6269, 204, 694, 11, 125, "Output"]
+Cell[5940, 193, 326, 9, 90, "Input"],
+Cell[6269, 204, 694, 11, 156, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7000, 220, 377, 10, 72, "Input"],
-Cell[7380, 232, 622, 10, 125, "Output"]
+Cell[7000, 220, 377, 10, 90, "Input"],
+Cell[7380, 232, 622, 10, 156, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
 Cell[8063, 249, 151, 2, 65, "Subtitle"],
 Cell[CellGroupData[{
-Cell[8239, 255, 105, 1, 200, "Section"],
-Cell[8347, 258, 527, 14, 125, "Input"]
+Cell[8239, 255, 105, 1, 250, "Section"],
+Cell[8347, 258, 527, 14, 156, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8911, 277, 88, 1, 200, "Section"],
-Cell[9002, 280, 136, 3, 72, "Input"],
+Cell[8911, 277, 88, 1, 250, "Section"],
+Cell[9002, 280, 136, 3, 90, "Input"],
 Cell[CellGroupData[{
-Cell[9163, 287, 2672, 61, 563, "Input"],
-Cell[11838, 350, 2012, 35, 1088, "Output"]
+Cell[9163, 287, 2672, 61, 703, "Input"],
+Cell[11838, 350, 2012, 35, 1360, "Output"]
 }, Open  ]],
-Cell[13865, 388, 584, 15, 72, "Input"],
+Cell[13865, 388, 584, 15, 90, "Input"],
 Cell[CellGroupData[{
-Cell[14474, 407, 299, 5, 72, "Input"],
-Cell[14776, 414, 16815, 309, 468, "Output"]
+Cell[14474, 407, 299, 5, 90, "Input"],
+Cell[14776, 414, 16815, 309, 585, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Closed]],
@@ -1203,30 +1325,48 @@ Cell[32042, 743, 847, 16, 38, "Input"]
 Cell[CellGroupData[{
 Cell[32926, 764, 89, 1, 103, "Section"],
 Cell[CellGroupData[{
-Cell[33040, 769, 96, 1, 58, "Subsection"],
-Cell[33139, 772, 135, 3, 58, "Input"],
+Cell[33040, 769, 96, 1, 72, "Subsection"],
+Cell[33139, 772, 135, 3, 72, "Input"],
 Cell[CellGroupData[{
-Cell[33299, 779, 5457, 115, 763, "Input"],
-Cell[38759, 896, 1860, 35, 728, "Output"]
+Cell[33299, 779, 5457, 115, 953, "Input"],
+Cell[38759, 896, 1860, 35, 910, "Output"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[40668, 937, 112, 1, 47, "Subsection"],
+Cell[40668, 937, 112, 1, 58, "Subsection"],
 Cell[CellGroupData[{
-Cell[40805, 942, 5997, 126, 414, "Input"],
-Cell[46805, 1070, 1634, 34, 38, "Output"]
+Cell[40805, 942, 5997, 126, 517, "Input"],
+Cell[46805, 1070, 1634, 34, 47, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[48476, 1109, 121, 2, 38, "Input"],
-Cell[48600, 1113, 108, 1, 38, "Output"]
+Cell[48476, 1109, 121, 2, 47, "Input"],
+Cell[48600, 1113, 108, 1, 47, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[48745, 1119, 121, 2, 38, "Input"],
-Cell[48869, 1123, 90, 1, 38, "Output"]
+Cell[48745, 1119, 121, 2, 47, "Input"],
+Cell[48869, 1123, 90, 1, 47, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Closed]]
-}, Closed]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[49032, 1132, 104, 1, 65, "Subtitle"],
+Cell[49139, 1135, 387, 6, 65, "Text"],
+Cell[49529, 1143, 182, 4, 38, "Input"],
+Cell[CellGroupData[{
+Cell[49736, 1151, 91, 1, 103, "Section"],
+Cell[49830, 1154, 1432, 39, 139, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[51299, 1198, 88, 1, 103, "Section"],
+Cell[51390, 1201, 286, 7, 38, "Input"],
+Cell[51679, 1210, 248, 7, 38, "Input"],
+Cell[CellGroupData[{
+Cell[51952, 1221, 706, 22, 38, "Input"],
+Cell[52661, 1245, 177, 2, 38, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 }
 ]

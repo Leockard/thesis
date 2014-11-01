@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[    588788,      12607]
-NotebookOptionsPosition[    583843,      12441]
-NotebookOutlinePosition[    584222,      12458]
-CellTagsIndexPosition[    584179,      12455]
+NotebookDataLength[    590375,      12659]
+NotebookOptionsPosition[    585311,      12489]
+NotebookOutlinePosition[    585690,      12506]
+CellTagsIndexPosition[    585647,      12503]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -11505,8 +11505,8 @@ Cell[BoxData[
       3, Typeset`graph, Typeset`boxes, $CellContext`flag], {
       CachedValue :> Typeset`boxes, SingleEvaluation -> True, 
        SynchronousUpdating -> False, TrackedSymbols :> {$CellContext`flag}},
-      ImageSizeCache->{{8.417069736727473, 
-       472.9999999963717}, {-244.99999999637166`, 226.58293026327257`}}],
+      ImageSizeCache->{{8.417069736801782, 
+       472.99999999999994`}, {-244.99999999999994`, 226.5829302631982}}],
      MouseAppearanceTag["NetworkGraphics"]],
     AllowKernelInitialization->False,
     UnsavedVariables:>{$CellContext`flag}]],
@@ -11671,8 +11671,8 @@ Cell[BoxData[
       3, Typeset`graph, Typeset`boxes, $CellContext`flag], {
       CachedValue :> Typeset`boxes, SingleEvaluation -> True, 
        SynchronousUpdating -> False, TrackedSymbols :> {$CellContext`flag}},
-      ImageSizeCache->{{8.47851307268966, 
-       474.9999999964417}, {-30.99999999644158, 13.722412845903541`}}],
+      ImageSizeCache->{{8.478513072762542, 475.0000000000002}, {-31., 
+       13.722412842526012`}}],
      MouseAppearanceTag["NetworkGraphics"]],
     AllowKernelInitialization->False,
     UnsavedVariables:>{$CellContext`flag}]],
@@ -11822,8 +11822,8 @@ Cell[BoxData[
       3, Typeset`graph, Typeset`boxes, $CellContext`flag], {
       CachedValue :> Typeset`boxes, SingleEvaluation -> True, 
        SynchronousUpdating -> False, TrackedSymbols :> {$CellContext`flag}},
-      ImageSizeCache->{{8.273701952658927, 
-       464.99999998855185`}, {-30.999999988552016`, 13.214295585260142`}}],
+      ImageSizeCache->{{8.273701952893399, 465.}, {-31.000000000000103`, 
+       13.214295574393656`}}],
      MouseAppearanceTag["NetworkGraphics"]],
     AllowKernelInitialization->False,
     UnsavedVariables:>{$CellContext`flag}]],
@@ -11959,8 +11959,8 @@ Cell[BoxData[
       3, Typeset`graph, Typeset`boxes, $CellContext`flag], {
       CachedValue :> Typeset`boxes, SingleEvaluation -> True, 
        SynchronousUpdating -> False, TrackedSymbols :> {$CellContext`flag}},
-      ImageSizeCache->{{8.253220840749481, 
-       463.99999999233444`}, {-30.9999999923345, 13.163483854856615`}}],
+      ImageSizeCache->{{8.253220840906488, 
+       464.00000000000034`}, {-30.999999999999936`, 13.163483847580459`}}],
      MouseAppearanceTag["NetworkGraphics"]],
     AllowKernelInitialization->False,
     UnsavedVariables:>{$CellContext`flag}]],
@@ -12080,8 +12080,8 @@ Cell[BoxData[
       3, Typeset`graph, Typeset`boxes, $CellContext`flag], {
       CachedValue :> Typeset`boxes, SingleEvaluation -> True, 
        SynchronousUpdating -> False, TrackedSymbols :> {$CellContext`flag}},
-      ImageSizeCache->{{8.232739728840716, 
-       462.99999999615005`}, {-30.999999996150397`, 13.112672124421476`}}],
+      ImageSizeCache->{{8.232739728919569, 
+       462.9999999999998}, {-31.00000000000005, 13.11267212076715}}],
      MouseAppearanceTag["NetworkGraphics"]],
     AllowKernelInitialization->False,
     UnsavedVariables:>{$CellContext`flag}]],
@@ -12187,8 +12187,8 @@ Cell[BoxData[
       3, Typeset`graph, Typeset`boxes, $CellContext`flag], {
       CachedValue :> Typeset`boxes, SingleEvaluation -> True, 
        SynchronousUpdating -> False, TrackedSymbols :> {$CellContext`flag}},
-      ImageSizeCache->{{8.360000000000005, 
-       459.64000000000027`}, {-30.99999999999995, 13.428392972860017`}}],
+      ImageSizeCache->{{8.360000000000007, 
+       459.6400000000002}, {-30.99999999999999, 13.428392972860056`}}],
      MouseAppearanceTag["NetworkGraphics"]],
     AllowKernelInitialization->False,
     UnsavedVariables:>{$CellContext`flag}]],
@@ -12282,8 +12282,8 @@ Cell[BoxData[
       3, Typeset`graph, Typeset`boxes, $CellContext`flag], {
       CachedValue :> Typeset`boxes, SingleEvaluation -> True, 
        SynchronousUpdating -> False, TrackedSymbols :> {$CellContext`flag}},
-      ImageSizeCache->{{7.98, 441.02000000000015`}, {-30.00000000000024, 
-       13.485648447984353`}}],
+      ImageSizeCache->{{7.98, 441.02000000000015`}, {-30.000000000000007`, 
+       13.485648447984403`}}],
      MouseAppearanceTag["NetworkGraphics"]],
     AllowKernelInitialization->False,
     UnsavedVariables:>{$CellContext`flag}]],
@@ -12426,8 +12426,8 @@ Cell[BoxData[
       3, Typeset`graph, Typeset`boxes, $CellContext`flag], {
       CachedValue :> Typeset`boxes, SingleEvaluation -> True, 
        SynchronousUpdating -> False, TrackedSymbols :> {$CellContext`flag}},
-      ImageSizeCache->{{7.966507033628044, 
-       450.0010624685991}, {-30.0010624685995, 13.451111189460264`}}],
+      ImageSizeCache->{{7.966485273089688, 450.0000000000001}, {-30., 
+       13.452119672195217`}}],
      MouseAppearanceTag["NetworkGraphics"]],
     AllowKernelInitialization->False,
     UnsavedVariables:>{$CellContext`flag}]],
@@ -12435,8 +12435,56 @@ Cell[BoxData[
    "NetworkGraphics", FrontEnd`GraphicsHighlightColor -> Hue[0.8, 1., 0.6]},
   FrameTicks->None]], "Output",
  CellChangeTimes->{3.619097633129746*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "*ombi*"}]], "Input",
+ CellChangeTimes->{{3.619258656955202*^9, 3.619258696215538*^9}}],
+
+Cell[BoxData[
+ DynamicModuleBox[{Typeset`open$$ = True}, 
+  PaneSelectorBox[{False->
+   RowBox[{
+    OpenerBox[Dynamic[Typeset`open$$],
+     ImageSize->Small], 
+    StyleBox["System`", "InfoHeading"]}], True->GridBox[{
+     {
+      RowBox[{
+       OpenerBox[Dynamic[Typeset`open$$],
+        ImageSize->Small], 
+       StyleBox["System`", "InfoHeading"]}]},
+     {GridBox[{
+        {
+         ButtonBox["ColorCombine",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3619240696-2133827", {"ColorCombine", "System`"}},
+          
+          ButtonNote->"System`"], 
+         ButtonBox["MardiaCombinedTest",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3619240696-2133827", {"MardiaCombinedTest", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["ParallelCombine",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3619240696-2133827", {"ParallelCombine", "System`"}},
+          ButtonNote->"System`"]}
+       },
+       DefaultBaseStyle->"InfoGrid",
+       GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.31666666666666665`]}}}]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}]}, 
+   Dynamic[Typeset`open$$],
+   ImageSize->Automatic]]], "Print", "InfoCell",
+ CellChangeTimes->{3.619258696584504*^9}]
 }, Open  ]]
-}, Closed]]
+}, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1918, 1053},
@@ -12581,33 +12629,37 @@ Cell[543544, 11380, 5400, 139, 498, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[548981, 11524, 682, 16, 64, "Input"],
-Cell[549666, 11542, 5447, 140, 71, "Output"]
+Cell[549666, 11542, 5434, 140, 71, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[555150, 11687, 710, 17, 64, "Input"],
-Cell[555863, 11706, 4925, 127, 70, "Output"]
+Cell[555137, 11687, 710, 17, 64, "Input"],
+Cell[555850, 11706, 4910, 127, 70, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[560825, 11838, 756, 17, 64, "Input"],
-Cell[561584, 11857, 4442, 113, 70, "Output"]
+Cell[560797, 11838, 756, 17, 64, "Input"],
+Cell[561556, 11857, 4445, 113, 70, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[566063, 11975, 536, 14, 64, "Input"],
-Cell[566602, 11991, 3959, 100, 70, "Output"]
+Cell[566038, 11975, 536, 14, 64, "Input"],
+Cell[566577, 11991, 3953, 100, 70, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[570598, 12096, 536, 14, 64, "Input"],
-Cell[571137, 12112, 3463, 86, 70, "Output"]
+Cell[570567, 12096, 536, 14, 64, "Input"],
+Cell[571106, 12112, 3461, 86, 70, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[574637, 12203, 584, 15, 64, "Input"],
-Cell[575224, 12220, 2917, 72, 69, "Output"]
+Cell[574604, 12203, 584, 15, 64, "Input"],
+Cell[575191, 12220, 2919, 72, 69, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[578178, 12297, 583, 15, 64, "Input"],
-Cell[578764, 12314, 5039, 122, 69, "Output"]
+Cell[578147, 12297, 583, 15, 64, "Input"],
+Cell[578733, 12314, 5026, 122, 69, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[583796, 12441, 115, 2, 38, "Input"],
+Cell[583914, 12445, 1357, 39, 66, "Print"]
 }, Open  ]]
-}, Closed]]
+}, Open  ]]
 }, Open  ]]
 }
 ]
