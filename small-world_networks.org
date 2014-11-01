@@ -52,7 +52,6 @@
     increasing function of N, and so the lattice does shose the small-world
     effect. (Newman 2000)
 
-
 * Models
 ** Original Watts - Strogatz
    Rewiring probability p.  Taking a network with a high graph diameter and adding a very
@@ -81,6 +80,8 @@
     p=1.
   + Doesn't mimic the degree distributions of real world netorks (Newman, 2010)
   + In the original model, a vertex can become disconnected from the rest (Newman 2010)
+  + "Thus, scale-free graphs need not be small worlds in the sense of the definition 4." (Cont & Tanimura)
+    "Scale-free networks are ultra small-world" (Cohen and Havlin)
    
 * Sources
   + https://en.wikipedia.org/wiki/Small-world_network
@@ -99,16 +100,28 @@
   + Barrat and Weigt 1999
     "On the properties of small world network models"
     (They arrive at the same conclusion as Newman & Watts)
-    Therefore, the mere notion of “small-world” graph, i.e. the region of disorder where
+    <Therefore, the mere notion of “small-world” graph, i.e. the region of disorder where
     the local properties are still similar to those of the one-dimensional ring whereas
     the global properties are determined by the random short-cuts in the graph, depends on
-    its size, and can be extended to smaller and smaller p, taking larger and larger N.
+    its size, and can be extended to smaller and smaller p, taking larger and larger N.>
     http://arxiv.org/pdf/cond-mat/9903411v2.pdf
   + Newman 2000
-    http://arxiv.org/pdf/cond-mat/0001118.pdf
     "Models of the small world"
+    http://arxiv.org/pdf/cond-mat/0001118.pdf
+  + Cont & Tanimura 2008
+    "Small world graphs: characterization and alternative constructions."
+    http://www.cmap.polytechnique.fr/~rama/papers/smallworld.pdf
 
 * Further reading
+  + http://arxiv.org/pdf/cond-mat/9907445v1.pdf
+  + http://arxiv.org/pdf/1003.4949.pdf
+  + http://arxiv.org/pdf/1007.4031v1.pdf
+  + http://arxiv.org/pdf/cond-mat/9904419.pdf
+  + http://arxiv.org/pdf/cond-mat/9903108v1.pdf
+  + http://arxiv.org/pdf/cond-mat/0402050v1.pdf
+  + http://arxiv.org/pdf/1003.4940.pdf
+  + http://arxiv.org/pdf/cond-mat/9904055.pdf
+  + http://polymer.bu.edu/~hes/networks/ch03.pdf
   + Kleinberg: http://www.cs.cornell.edu/home/kleinber/
     Small-World Phenomena and Decentralized Search
   + Newman & Watts: http://arxiv.org/pdf/cond-mat/9903357.pdf
@@ -117,4 +130,5 @@
     growing linearly with n and starts growing logarithmically. Barrat and Weigt 1999
     arrive at some of the same conclusions.
   + Dynamical systems over small world networks
-  + Cellular automata and small-world networks?
+    http://arxiv.org/pdf/cond-mat/9909379.pdf
+  + Cellular automata and small-world networks (?)

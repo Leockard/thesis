@@ -5,6 +5,7 @@
 * state of the art
 ** connectome
    + vast datasets - how to analize them?
+     use HCP data, which you are allowed to use!!!
 ** games on graphs
    + Nowak
 ** graphs from games
@@ -132,4 +133,22 @@
     
     http://neuro.fcrb.es/alexpage/roxin04b.pdf (dynamics)
     
-    
+* models to work on
+  Jackson's Hybrid model (friends of friends) is a small world. PROOF?
+* abstract
+  The recent surge of interest in Network Theory has led to the creation of new concepts
+  and tools to broaden the applications of Network Analysis. For example, neuroscientists
+  are trying to discover the different ways in which neurons wire together and how these
+  patterns affect computational, biochemical and even behavioral brain processes. In this
+  context, a particular type of network topology, called Small-World networks, have been
+  brought to light as one of the unifying principles of biological neural network
+  organization. They also appear in other networks as diverse as electrical power grids and
+  social influence networks.  My Bachelor’s Thesis is concerned with the Mathematical
+  aspects of Small-World networks. I begin by commenting the various formal definitions and
+  in particular, the one proposed by Cont and Tanimura (2008). Furthermore, I study a new
+  model built by them, which differs from the original model by Watts and Strogatz (1998) in
+  that it no longer depends in an underlying regular topology. In this way, the new model is
+  closer to the networks we find in real-life phenomena. Next, I discuss some interesting
+  dynamical consequences of being a Small-World network. The project ends by commenting on
+  the importance of the formalization of such models and further steps to take to further
+  approximate formal Network Analysis to Neuroscience.
