@@ -93,41 +93,49 @@ Introducción
 \end_layout
 
 \begin_layout Section*
-Teoría de Grafos
+Grafos
 \end_layout
 
-\begin_layout Standard
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Etiam et dignissim sem.
- Nullam maximus ante ac porttitor blandit.
- Pellentesque habitant morbi tristique senectus et netus et malesuada fames
- ac turpis egestas.
- Pellentesque quis quam tincidunt, suscipit sem quis, eleifend ipsum.
- Integer eget eleifend nisl.
- Maecenas et vulputate diam.
- Curabitur luctus consequat fringilla.
- Etiam pretium ligula et dui interdum, vitae porta erat maximus.
- Aliquam erat volutpat.
- Proin tempus nibh tincidunt quam eleifend venenatis.
+\begin_layout Itemize
+Grafo: nodos y aristas.
+ Grafos simples.
+ Subgrafo.
+\end_layout
+
+\begin_layout Itemize
+Aristas dirigidas y con pesos.
+\end_layout
+
+\begin_layout Itemize
+Matriz de adyacencia.
+\end_layout
+
+\begin_layout Itemize
+Caminos, ciclos y geodésicas.
+\end_layout
+
+\begin_layout Itemize
+Grafos infinitos.
+\end_layout
+
+\begin_layout Itemize
+Formas de estudio: álgebra, algoritmia, combinatoria, probabilidad, redes.
 \end_layout
 
 \begin_layout Section*
-Teoría de Redes
+Redes
 \end_layout
 
-\begin_layout Standard
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Etiam et dignissim sem.
- Nullam maximus ante ac porttitor blandit.
- Pellentesque habitant morbi tristique senectus et netus et malesuada fames
- ac turpis egestas.
- Pellentesque quis quam tincidunt, suscipit sem quis, eleifend ipsum.
- Integer eget eleifend nisl.
- Maecenas et vulputate diam.
- Curabitur luctus consequat fringilla.
- Etiam pretium ligula et dui interdum, vitae porta erat maximus.
- Aliquam erat volutpat.
- Proin tempus nibh tincidunt quam eleifend venenatis.
+\begin_layout Itemize
+Qué es: conceptos y métodos
+\end_layout
+
+\begin_layout Itemize
+Aplicaciones
+\end_layout
+
+\begin_layout Itemize
+Aplicaciones a Neurociencia
 \end_layout
 
 \begin_layout Section*
@@ -136,42 +144,55 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Small-Worlds
 \end_layout
 
-\begin_layout Standard
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Etiam et dignissim sem.
- Nullam maximus ante ac porttitor blandit.
- Pellentesque habitant morbi tristique senectus et netus et malesuada fames
- ac turpis egestas.
- Pellentesque quis quam tincidunt, suscipit sem quis, eleifend ipsum.
- Integer eget eleifend nisl.
- Maecenas et vulputate diam.
- Curabitur luctus consequat fringilla.
- Etiam pretium ligula et dui interdum, vitae porta erat maximus.
- Aliquam erat volutpat.
- Proin tempus nibh tincidunt quam eleifend venenatis.
+\begin_layout Itemize
+Historia, 6 grados de separación
+\end_layout
+
+\begin_layout Itemize
+Ejemplos de la vida real
+\end_layout
+
+\begin_layout Itemize
+Modelo original: Watts y Strogatz
 \end_layout
 
 \begin_layout Subsection*
-Definiciones (énfasis en plural)
+Definiciones formales
 \end_layout
 
-\begin_layout Standard
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Etiam et dignissim sem.
- Nullam maximus ante ac porttitor blandit.
- Pellentesque habitant morbi tristique senectus et netus et malesuada fames
- ac turpis egestas.
- Pellentesque quis quam tincidunt, suscipit sem quis, eleifend ipsum.
- Integer eget eleifend nisl.
- Maecenas et vulputate diam.
- Curabitur luctus consequat fringilla.
- Etiam pretium ligula et dui interdum, vitae porta erat maximus.
- Aliquam erat volutpat.
- Proin tempus nibh tincidunt quam eleifend venenatis.
+\begin_layout Itemize
+Small world effect vs small world graph
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+problema: ambigüedad
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Indicadores
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+problema: dependen de otro grafo (no son un número para un grafo, sino una
+ distribución: no se comporta como otros indicadores más claros)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Definiciones asintóticas
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+problema: dependen del proceso de crecimiento del grafo
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
-Algunos resultados
+Difusión
 \end_layout
 
 \begin_layout Standard
@@ -193,19 +214,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 En el presente trabajo,...
 \end_layout
 
-\begin_layout Standard
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Etiam et dignissim sem.
- Nullam maximus ante ac porttitor blandit.
- Pellentesque habitant morbi tristique senectus et netus et malesuada fames
- ac turpis egestas.
- Pellentesque quis quam tincidunt, suscipit sem quis, eleifend ipsum.
- Integer eget eleifend nisl.
- Maecenas et vulputate diam.
- Curabitur luctus consequat fringilla.
- Etiam pretium ligula et dui interdum, vitae porta erat maximus.
- Aliquam erat volutpat.
- Proin tempus nibh tincidunt quam eleifend venenatis.
+\begin_layout Itemize
+Se presenta la definción formal asintótica de Cont y Tanimura
+\end_layout
+
+\begin_layout Itemize
+Se discute un modelo small world
 \end_layout
 
 \begin_layout Chapter
@@ -232,7 +246,7 @@ Si
 
  para denotar su cardinalidad.
  Cada vez que hablemos de un grafo 
-\begin_inset Formula $G=(\mathcal{\mathscr{N,\, E}})$
+\begin_inset Formula $G=(\mathcal{\mathscr{N,E}})$
 \end_inset
 
 , identificaremos los nodos 
@@ -240,7 +254,7 @@ Si
 \end_inset
 
  con los números naturales 
-\begin_inset Formula $1,2,...,|N|$
+\begin_inset Formula $1,2,...,|\mathscr{N}|$
 \end_inset
 
 .
@@ -249,7 +263,7 @@ Si
 \end_inset
 
  con el conjunto de nodos, 
-\begin_inset Formula $G\equiv\mathscr{\mathcal{N}}$
+\begin_inset Formula $G\equiv\mathscr{N}$
 \end_inset
 
 , es decir 
@@ -368,10 +382,18 @@ posible
 \end_inset
 
 , 
+\begin_inset Formula $4\notin G$
+\end_inset
+
+, 
 \begin_inset Formula $(1,2)\in G$
 \end_inset
 
- y 
+, 
+\begin_inset Formula $(1,3)\notin G$
+\end_inset
+
+, y 
 \begin_inset Formula $(1,3)\in G\times G$
 \end_inset
 
@@ -518,7 +540,10 @@ La función
  En nuestra discusión, nos interesarán en particular cuatro indicadores.
  Pasamos a definir tres de ellos y dejaremos el último para una sección
  posterior.
- Sea el grafo 
+\end_layout
+
+\begin_layout Standard
+Sea el grafo 
 \begin_inset Formula $G\in\Gamma_{\infty}$
 \end_inset
 
@@ -550,7 +575,7 @@ Grado y grado promedio
 Estos indicadores son las cantidades típicas que se manejan en todas las
  áreas de la Teoría de Grafos.
  
-\begin_inset Formula $deg_{G}(i)$
+\begin_inset Formula $deg(i)$
 \end_inset
 
  es el número de vecinos del nodo 
@@ -564,7 +589,7 @@ Estos indicadores son las cantidades típicas que se manejan en todas las
  es la media aritmética de ellos.
 \begin_inset Formula 
 \[
-deg_{G}(i)=\underset{j=1}{\overset{|G|}{\sum}}a_{ij}\qquad y\qquad deg(G)=\frac{1}{|G|}\overset{|G|}{\underset{i=1}{\sum}}deg_{G}(i).
+deg_{G}(i)=\underset{j=1}{\overset{|G|}{\sum}}a_{ij}\qquad deg(G)=\frac{1}{|G|}\overset{|G|}{\underset{i=1}{\sum}}deg_{G}(i).
 \]
 
 \end_inset
@@ -590,7 +615,7 @@ coeficiente de agrupación local
 \begin_layout Standard
 \begin_inset Formula 
 \[
-c_{i}=\frac{\underset{j=i}{\overset{|G|}{\sum}}\underset{k\neq j}{\sum}a_{ij}a_{ik}a_{jk}}{deg_{G}(i)(\frac{deg_{G}(i)-1}{2})}.
+c_{i}=\frac{\underset{j\neq i}{\overset{|G|}{\sum}}\underset{k\neq j,k\neq i}{\sum}a_{ij}a_{ik}a_{jk}}{deg_{G}(i)(\frac{deg_{G}(i)-1}{2})}.
 \]
 
 \end_inset
@@ -638,12 +663,52 @@ Como las entradas
 \end_inset
 
 .
- Por otro lado, el denominador es simplemente el número total de posibles
- triángulos que incluyen a 
+ Por otro lado, el denominador es simplemente el número total de aristas
+ que puede haber entre vecinos de 
+\begin_inset Formula $i$
+\end_inset
+
+, o, equivalentemente, el número total de posibles triángulos que incluyen
+ a 
 \begin_inset Formula $i$
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+A partir de estos 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+, definimos un indicador más usado, llamado el 
+\emph on
+coeficiente de agrupación local promedio de 
+\begin_inset Formula $G$
+\end_inset
+
+
+\emph default
+, denotado 
+\begin_inset Formula $\overline{c}(G)$
+\end_inset
+
+ ó simplemente 
+\begin_inset Formula $\overline{c}$
+\end_inset
+
+, cuando no haya lugar a ambigüedad, 
+\begin_inset Formula $\overline{c}(G)=\frac{1}{|G|}\underset{i=1}{\overset{|G|}{\sum}}c_{i}$
+\end_inset
+
+.
+ Abreviaremos 
+\begin_inset Formula $\overline{c}$
+\end_inset
+
+ como 
+\emph on
+agrupación local de G.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -687,12 +752,25 @@ donde
 \end_inset
 
 .
+ Si no hay un camino entre los nodos 
+\begin_inset Formula $i,j$
+\end_inset
+
+, escribimos 
+\begin_inset Formula $d(i,j)=\infty$
+\end_inset
+
+ y, en ese caso, tenemos 
+\begin_inset Formula $diam(G)=\infty$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Paragraph
 Claramente, estas funciones tienen el derecho de llamarse indicadores gráficos,
- desde que las podemos expresar como funciones medibles de las matrices
- de adyacencia.
+ ya que las podemos expresar como funciones medibles de las matrices de
+ adyacencia.
 \end_layout
 
 \begin_layout Paragraph
@@ -708,7 +786,7 @@ Definidos nuestro espacio medible y funciones medibles sobre él, pasaremos
 \end_layout
 
 \begin_layout Subsection*
-Grafos e indicadores aleatorios
+Grafos e Indicadores aleatorios
 \end_layout
 
 \begin_layout Standard
@@ -734,7 +812,7 @@ Un grafo aleatorio es una variable aleatoria
 \emph on
 siempre 
 \emph default
-es aleatorio, sin importar si el grafo que mide lo es o no.
+es aleatorio, sin importar si el grafo bajo estudio lo es o no.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -746,10 +824,31 @@ Dado un grafo
 \begin_inset Formula $G\in\Gamma_{\infty}$
 \end_inset
 
-, aleatorio o determinístico, definimos
+, aleatorio o determinístico, definimos 
+\begin_inset Formula $U:\Omega\to G\times G\setminus\{(i,i):\, i\in G\}$
+\end_inset
+
+, un par de nodos distintos 
+\begin_inset Formula $u\neq v$
+\end_inset
+
+ del grafo 
+\begin_inset Formula $G$
+\end_inset
+
+, elegidos de manera uniforme.
+ En este caso, definimos la distancia típica de 
+\begin_inset Formula $G$
+\end_inset
+
+, 
+\begin_inset Formula $T_{G}$
+\end_inset
+
+ como la distancia entre ellos 
 \begin_inset Formula 
 \[
-T(G)=d(u,v)
+T_{G}=d(U)=d(u,v).
 \]
 
 \end_inset
@@ -758,15 +857,32 @@ T(G)=d(u,v)
 \end_layout
 
 \begin_layout Standard
-donde la arista 
-\begin_inset Formula $(u,v)$
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/leo/thesis/figures/measures.png
+
 \end_inset
 
- es escogida de manera aleatoria y uniforme de 
-\begin_inset Formula $G\times G\setminus\{(i,i):\, i\in G\}$
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Indicadores gráficos.
+\end_layout
+
 \end_inset
 
-.
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -965,7 +1081,7 @@ en probabilidad
 Cuando
 \begin_inset Formula 
 \[
-\underset{n\rightarrow\infty}{\limsup}\; P\big(\frac{Q(G_{n})}{f(n)}\leq1\big)=1.
+\underset{n\rightarrow\infty}{\limsup}\, P\big(\frac{Q(G_{n})}{f(n)}\leq1\big)=1.
 \]
 
 \end_inset
@@ -1037,7 +1153,7 @@ si
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\exists\mathrm{a_{2}}>0:\, c_{i}\geq\mathrm{a_{2}},\,\forall i\in G_{n}\,\forall n=1,2,...,\infty$
+\begin_inset Formula $\exists\mathrm{a_{2}}>0:\,\overline{c}(G)\geq\mathrm{a_{2}},\,\forall n=1,2,...,\infty$
 \end_inset
 
 ,
@@ -1048,7 +1164,7 @@ si
 \end_inset
 
  es cota superior del crecimiento de 
-\begin_inset Formula $T(G_{n})$
+\begin_inset Formula $T_{G_{n}}$
 \end_inset
 
 .
@@ -1061,6 +1177,152 @@ Si el modelo
 
  es aleatorio, cualquiera de las tres propiedades puede cumplirse en esperanza,
  en probabilidad o casi ciertamente.
+\end_layout
+
+\begin_layout Remark*
+En la definición, acotamos el grado esperado del modelo aún cuando no mencionamo
+s tal restricción en la discusión previa.
+ Esto se hace por la razón práctica de evitar que ciertos ejemplos triviales
+ cumplan con nuestra definición.
+ Por ejemplo, el grafo completo, como se mencionó antes, cumple con el efecto
+ 
+\emph on
+small-world, 
+\emph default
+pero no con esta nueva definición.
+ Más aún, podemos considerar la idea intuitiva de que, si el grado promedio
+ fuera grande, sería muy 
+\begin_inset Quotes eld
+\end_inset
+
+fácil
+\begin_inset Quotes erd
+\end_inset
+
+ para todos los nodos cumplir con ambas restricciones de agrupación y distancia.
+ Quizás se cumplen hasta por coincidencia.
+ Queremos estudiar aquellos grafos que cumplen con la definición, sin que
+ sea una consecuencia directa de la alta conectividad inherente (grado).
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Remark*
+La restricción sobre el coeficiente de agrupación es ciertamente bastante
+ leve.
+ Si el modelo es aleatorio, bastaría que, asintóticamente en el número de
+ nodos, el número esperado de triángulos formado por un nodo sea igual a
+ 1 (si el grado de ellos no cambia).
+ Sin embargo, si cada nodo estuviera tan poco conectado como para formar
+ solo un triángulo, sería difícil para la distancia típica ser tan corta
+ como estamos requiriendo.
+\end_layout
+
+\begin_layout Subsubsection*
+Ejemplos y contraejemplos
+\end_layout
+
+\begin_layout Standard
+En los siguientes ejemplos, consideremos un modelo de crecimiento de grafos
+ 
+\begin_inset Formula $(G_{n})_{n=1}^{\infty}$
+\end_inset
+
+ arbitrario.
+\end_layout
+
+\begin_layout Description
+Triviales Los modelos de grafo completo 
+\begin_inset Formula $G_{n}=K(n)$
+\end_inset
+
+, grafo vacío 
+\begin_inset Formula $G_{n}=\overline{K}(n)$
+\end_inset
+
+, grafo estrella 
+\begin_inset Formula $G_{n}=S_{n-1}$
+\end_inset
+
+ y grafo árbol 
+\begin_inset Formula $G_{n}=árbol(n)$
+\end_inset
+
+, no son modelos 
+\emph on
+small-world.
+ 
+\emph default
+El grafo completo no cumple con la limitación del grado; los otros tres
+ no cumplen con la cota de agrupación.
+ (Los árboles no pueden tener triángulos).
+\end_layout
+
+\begin_layout Description
+Erdos-Renyi Si 
+\begin_inset Formula $G_{n}=G(n,p)$
+\end_inset
+
+, entonces se cumplen las restricciones necesarias sobre la distancia típica
+ (de hecho, aún mejor, sobre el diámetro) y sobre el coeficiente de agrupación,
+ pero no la del grado.
+ Si, en cambio, consideramos la versión que mantiene el grado esperado constante
+, 
+\begin_inset Formula $G_{n}=\overline{G}(n,p_{n})$
+\end_inset
+
+, donde 
+\begin_inset Formula $\mathsf{E}[deg_{G_{n}}(i)]=p_{n}(n-1)$
+\end_inset
+
+, entonces sí se cumple la definición.
+\end_layout
+
+\begin_layout Description
+Látices Un látice regular (por ejemplo, el modelo de Watts y Strogatz con
+ 
+\begin_inset Formula $p=0$
+\end_inset
+
+) cumple trivialmente las condiciones de agrupación y grado.
+ Sin embargo, cuando se aumentan nuevos nodos al grafo, la distancia aumenta
+ como 
+\begin_inset Formula $\sqrt[d]{n}$
+\end_inset
+
+, donde 
+\begin_inset Formula $d$
+\end_inset
+
+ es la dimensión del látice.
+\end_layout
+
+\begin_layout Description
+Watts-Strogatz Si 
+\begin_inset Formula $k>0$
+\end_inset
+
+ y 
+\begin_inset Formula $p>0$
+\end_inset
+
+ son fijos y 
+\begin_inset Formula $G_{n}=WS(n,k,p)$
+\end_inset
+
+, entonces 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ cumple la definición.
+\end_layout
+
+\begin_layout Description
+Exponencial 
+\color red
+POR PROBAR
 \end_layout
 
 \begin_layout Chapter
@@ -1076,7 +1338,7 @@ El modelo simplificado
 \end_layout
 
 \begin_layout Standard
-Este modelo nace del deseo de construir un modelo de grafo 
+Este modelo viene de la necesidad de construir un modelo de grafo 
 \emph on
 small-world 
 \emph default
@@ -1092,8 +1354,7 @@ comunidades
  (subgrafos completos) y unirlas de manera aleatoria.
  En esta versión simplificada, consideraremos el caso en que todas las comunidad
 es tienen el mismo número de nodos.
- Esta restricción es para dejar más clara la prueba y familiarizarnos con
- el modelo.
+ Hacemos esto para esclarecer la prueba y familiarizarnos con el modelo.
  En la siguiente sección, levantaremos esta restricción.
 \end_layout
 
@@ -1306,7 +1567,7 @@ el conjunto de los nodos que tienen
  Entonces,
 \begin_inset Formula 
 \[
-(i,j)\in G\Longleftrightarrow i\neq j\ and\ (i,j)\in\underset{m=1}{\overset{M}{\bigcup}}A^{m}\times A^{m}.
+(i,j)\in G\Longleftrightarrow i\neq j\ y\ (i,j)\in\underset{m=1}{\overset{M}{\bigcup}}A^{m}\times A^{m}.
 \]
 
 \end_inset
@@ -1351,7 +1612,7 @@ El modelo
 \begin_inset Formula $(G_{n})_{n=1}^{\infty}$
 \end_inset
 
- es un grafo 
+ es un modelo de crecimiento de grafos 
 \emph on
 small-world.
 \end_layout
@@ -1412,7 +1673,7 @@ Por ser las variables
 \[
 P(S_{1}=x_{1},S_{2}=x_{2},...,S_{M}=x_{M})=\begin{cases}
 \frac{n!}{x_{1}!x_{2}!...x_{M}!}(\frac{1}{M})^{n}, & \underset{k=1}{\overset{M}{\sum}}x_{k}=n\\
-0, & otherwise
+0, & \text{de otro modo}
 \end{cases},
 \]
 
@@ -1467,10 +1728,14 @@ En el modelo
 \begin_inset Formula $(G_{n})_{n=1}^{\infty}$
 \end_inset
 
-, el coeficiente de agrupación local cumple 
+, el coeficiente de agrupación local de cada nodo 
+\begin_inset Formula $i\in G_{n}$
+\end_inset
+
+ cumple 
 \begin_inset Formula 
 \[
-c_{i}\geq\frac{1}{2}-\frac{1}{\delta-1},\,\forall i\in G_{n},\forall n=1,2,....
+c_{i}\geq\frac{1}{2}-\frac{1}{\delta-1},\,\forall n=1,2,....
 \]
 
 \end_inset
@@ -1533,7 +1798,7 @@ c_{i}\geq\frac{1}{2}-\frac{1}{\delta-1}.
 \end_layout
 
 \begin_layout Remark*
-Para que el model sea 
+Para que el modelo sea 
 \emph on
 small-world, 
 \emph default
@@ -1582,7 +1847,7 @@ Concretamente, para
 \begin_inset Formula $|\overline{S}|\geq\frac{n}{2}$
 \end_inset
 
- y además, si 
+ y, si 
 \begin_inset Formula $v\in\overline{S}$
 \end_inset
 
@@ -1679,7 +1944,7 @@ En palabras,
 También definimos los eventos
 \begin_inset Formula 
 \[
-E_{k}=\{|C_{k}|\geq3|C_{k-1}|\},\ k=1,2,...
+E_{k}=\{|C_{k}|>e|C_{k-1}|\},\ k=1,2,...
 \]
 
 \end_inset
@@ -1692,13 +1957,17 @@ E_{k}=\{|C_{k}|\geq3|C_{k-1}|\},\ k=1,2,...
 \end_inset
 
  implica que el número de comunidades que alcanzamos en el último paso es
- al menos tres veces mayor que el número anterior.
+ al menos 
+\begin_inset Formula $e$
+\end_inset
+
+ veces mayor que el número anterior.
  
 \begin_inset Formula $\underset{m=1}{\overset{l}{\bigcap}}E_{m}$
 \end_inset
 
  implica que hemos descubierto comunidades a una velocidad exponencial,
- con base 3, hasta el 
+ hasta el 
 \begin_inset Formula $l$
 \end_inset
 
@@ -1835,11 +2104,164 @@ Escogemos
 \begin_inset Formula $2\leq j\leq\tau_{\sqrt{M}}$
 \end_inset
 
- 
-\color red
-POR PROBAR
+ Escribimos 
+\begin_inset Formula $\mathscr{E}_{l}=\underset{m=1}{\overset{l}{\cap}}E_{m}$
+\end_inset
+
+.
+ Queremos acotar la probabilidad del evento 
+\begin_inset Formula $E_{j}$
+\end_inset
+
+, condicionado a 
+\begin_inset Formula $\mathscr{E}_{j-1}$
+\end_inset
+
+, cuando 
+\begin_inset Formula $j<\tau_{\sqrt{M}}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $V=\{1,2,...,A\}$
+\end_inset
+
+ el conjunto de todas comunidades vistas hasta el paso 
+\begin_inset Formula $j-1$
+\end_inset
+
+ y supongamos que en el paso 
+\begin_inset Formula $j-1$
+\end_inset
+
+ se alcanzaron exactamente 
+\begin_inset Formula $\mu$
+\end_inset
+
+ nuevas comunidades.
+ Como 
+\begin_inset Formula $j<\tau_{\sqrt{M}}$
+\end_inset
+
+, tenemos 
+\begin_inset Formula $\mu\leq A<\sqrt{M}$
+\end_inset
+
+.
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Ahora bien, condicionalmente en 
+\begin_inset Formula $\mathscr{E}_{j-1}$
+\end_inset
+
+, se cumple que 
+\begin_inset Formula $e^{j-1}\leq\mu\leq\delta^{j-1}$
+\end_inset
+
+.
+ Además, 
+\begin_inset Formula $E_{j}^{C}=\{0\leq|C_{j}|<e\mu\}$
+\end_inset
+
+ ocurre cuando todos los nodos en el paso 
+\begin_inset Formula $j-1$
+\end_inset
+
+ escogieron una comunidad secundaria o bien en 
+\begin_inset Formula $V$
+\end_inset
+
+ o bien en un conjunto 
+\begin_inset Formula $K$
+\end_inset
+
+ de comunidades no vistas, 
+\begin_inset Formula $K=\{k_{1},k_{2},...,k_{3\mu-1}\}\subset V^{^{C}}$
+\end_inset
+
+.
+ Es decir, cuando hay 
+\begin_inset Formula $e\mu-1$
+\end_inset
+
+ comunidades nuevas
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+En realidad nos referimos al máximo entero de 
+\begin_inset Formula $e\mu-1$
+\end_inset
+
+.
+ Hacemos esta identificación para hacer la exposición más clara y no sobrecargar
+ la notación.
+\end_layout
+
+\end_inset
+
+, como mucho.
+\end_layout
+
+\begin_layout Standard
+Entonces, tenemos
+\begin_inset Formula 
+\begin{multline*}
+E_{j}^{c}\big|\big(\{|C_{j-1}|=\mu\}\cap\mathscr{E}_{j-2}\cap\{j<\tau_{\sqrt{M}}\}\big)\Longleftrightarrow\\
+\exists K=\{k_{1},k_{2},...,k_{e\mu-1}\}\subset V^{C}:\, X_{i}\in V\cup K,\,\forall i=1,2,...,\delta\mu.
+\end{multline*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P\big(E_{j}^{c}\big|\{|C_{j-1}| & =\mu\}\cap\mathscr{E}_{j-2}\cap\{j<\tau_{\sqrt{M}}\}\big)\leq\underset{k_{1},k_{2},...,k_{e\mu-1}\in V^{C}}{\sum}P(\forall X_{i},\, X_{i}\in V\cup K)\\
+ & =\underset{k_{1},k_{2},...,k_{e\mu-1}\in V^{C}}{\sum}P(X_{i}\in V\cup K)^{\delta\mu}=\binom{M-A}{e\mu-1}\big(\frac{A+e\mu-1}{M}\big)^{\delta\mu}\\
+ & \leq\frac{(M-A)^{e\mu-1}}{\left(e\mu-1\right)!}\big(\frac{\sqrt{M}}{M}\big)^{\delta\mu}\leq\frac{1}{M{}^{\mu(\delta/2-e)+1}}\\
+ & \leq\frac{1}{M{}^{e^{j-1}(\delta/2-e)+1}}.
+\end{align*}
+
+\end_inset
+
+Por último, observamos que 
+\begin_inset Formula $\mathscr{E}_{j-1}=\mathscr{E}_{j-2}\cap\underset{\mu=3^{j-1}}{\overset{\delta^{j-1}}{\bigcup}}\{|C_{j-1}|=\mu\}.$
+\end_inset
+
+ Entonces,
+\begin_inset Formula 
+\begin{align*}
+P\big(E_{j}^{c}\big|\mathscr{E}_{j-1}\cap\{j & <\tau_{\sqrt{M}}\}\big)=\overset{\delta^{j-1}}{\underset{\mu=e^{j-1}}{\sum}}P\big(E_{j}^{c}\big|\{|C_{j-1}|=\mu\}\cap\mathscr{E}_{j-2}\cap\{j<\tau_{\sqrt{M}}\}\big)\frac{P(\{|C_{j-1}|=\mu\}\cap\mathscr{E}_{j-2}\cap\{j<\tau_{\sqrt{M}}\})}{P(\mathscr{E}_{j-1}\cap\{j<\tau_{\sqrt{M}}\})}\\
+ & \leq\overset{\delta^{j-1}}{\underset{\mu=e^{j-1}}{\sum}}P\big(E_{j}^{c}\big|\{|C_{j-1}|=\mu\}\cap\mathscr{E}_{j-2}\cap\{j<\tau_{\sqrt{M}}\}\big)\\
+ & \leq\frac{\delta^{j-1}-e^{j-1}}{M{}^{e^{j-1}(\delta/2-e)+1}}\\
+ & \leq\frac{M^{j-1}}{M{}^{e^{j-1}(\delta/2-e)+1}}\\
+ & \leq\frac{1}{M^{3}}.
+\end{align*}
+
+\end_inset
+
+Donde la última desigualdad se cumple a partir de 
+\begin_inset Formula $j=3$
+\end_inset
+
+ para 
+\begin_inset Formula $\delta\geq7$
+\end_inset
+
+, y desde 
+\begin_inset Formula $j=2$
+\end_inset
+
+ si 
+\begin_inset Formula $\delta\geq8$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Description
 \begin_inset Formula $\tau_{\sqrt{M}}<j\leq\tau_{\frac{M}{2}}$
 \end_inset
@@ -2156,18 +2578,6 @@ Donde
 Por el Lema de Borel-Cantelli, tenemos 
 \begin_inset Formula 
 \[
-P(\underset{n\to\infty}{\limsup}\frac{d(u,v)}{O(\log(n))}>1)=0.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-Es decir,
-\begin_inset Formula 
-\[
 P(\underset{n\to\infty}{\limsup}\frac{T(G_{n})}{O(\log(n))}\leq1)=1.
 \]
 
@@ -2210,20 +2620,1522 @@ Modelo generalizado
 \end_layout
 
 \begin_layout Standard
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Etiam et dignissim sem.
- Nullam maximus ante ac porttitor blandit.
- Pellentesque habitant morbi tristique senectus et netus et malesuada fames
- ac turpis egestas.
- Pellentesque quis quam tincidunt, suscipit sem quis, eleifend ipsum.
- Integer eget eleifend nisl.
- Maecenas et vulputate diam.
- Curabitur luctus consequat fringilla.
- Etiam pretium ligula et dui interdum, vitae porta erat maximus.
- Aliquam erat volutpat.
- Proin tempus nibh tincidunt quam eleifend venenatis.
+Pasamos a discutir el modelo generalizado de Cont y Tanimura.
+ Este modelo tiene dos cambios importantes con respecto al anterior.
+ Primero, cada comunidad ya no es de un tamaño 
+\begin_inset Formula $\delta$
+\end_inset
+
+ fijado con anterioridad, sino que se agrupan los 
+\begin_inset Formula $n$
+\end_inset
+
+ nodos en comunidades de un tamaño que cercano a 
+\begin_inset Formula $\log(n)$
+\end_inset
+
+.
+ Segundo, cada nodo puede estar conectado a un número aleatorio de comunidades
+ secundarias.
 \end_layout
 
+\begin_layout Subsubsection*
+Construcción
+\end_layout
+
+\begin_layout Standard
+Fijamos 
+\begin_inset Formula $n\in\mathcal{\mathbb{N}}$
+\end_inset
+
+ y construimos el grafo 
+\begin_inset Formula $G_{n}\in\Gamma_{n}$
+\end_inset
+
+ en tres pasos, empezando desde el grafo vacío.
+\end_layout
+
+\begin_layout Enumerate
+Separamos los 
+\begin_inset Formula $n$
+\end_inset
+
+ nodos en 
+\begin_inset Formula $M$
+\end_inset
+
+ comunidades, cada una de tamaño 
+\begin_inset Formula $\log(n)-1\leq|G^{k}|\leq\log(n)+1,\, k=1,2,...,M$
+\end_inset
+
+.
+ Para cada comunidad 
+\begin_inset Formula $G^{k}$
+\end_inset
+
+, unimos cada uno de sus nodos con todos los otros pertenecientes a la misma
+ 
+\emph on
+comunidad de origen
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+Construimos el grafo auxiliar 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ con 
+\begin_inset Formula $M$
+\end_inset
+
+ nodos.
+ Identificamos cada comunidad 
+\begin_inset Formula $G^{k}$
+\end_inset
+
+con el nodo 
+\begin_inset Formula $k$
+\end_inset
+
+ de 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+.
+ En el grafo 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+, unimos cada par de nodos con una probabilidad 
+\begin_inset Formula $p=\frac{r\log(M)}{M}$
+\end_inset
+
+, con 
+\begin_inset Formula $r>1$
+\end_inset
+
+.
+ De esta manera, el grafo 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ es un grafo de Erdos-Renyi.
+ Si dos nodos 
+\begin_inset Formula $i,j$
+\end_inset
+
+ de 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ están unidos, escogemos aleatoriamente y de manera uniforme un nodo 
+\begin_inset Formula $u$
+\end_inset
+
+ en 
+\begin_inset Formula $G^{i}\cup G^{j}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $u\in G^{i}$
+\end_inset
+
+, lo unimos con una arista a cada nodo de 
+\begin_inset Formula $G^{j}$
+\end_inset
+
+; si 
+\begin_inset Formula $u\in G^{j}$
+\end_inset
+
+, lo unimos a cada nodo de 
+\begin_inset Formula $G^{i}$
+\end_inset
+
+.
+ Igual que antes, estas serán las comunidades de destino de cada nodo.
+\end_layout
+
+\begin_layout Enumerate
+Finalmente, si dos nodos de 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ comparten al menos una comunidad de destino, los unimos con una arista.
+\end_layout
+
+\begin_layout Standard
+De esta manera, la construcción es análoga a la anterior, excepto que ahora
+ cada nodo tiene un número aleatorio de comunidades secundarias, entre 
+\begin_inset Formula $0$
+\end_inset
+
+ y 
+\begin_inset Formula $M-1$
+\end_inset
+
+, inclusive.
+\end_layout
+
+\begin_layout Claim
+El modelo generalizado 
+\begin_inset Formula $(G_{n})_{n=1}^{\infty}$
+\end_inset
+
+ es un modelo 
+\emph on
+small-world.
+\end_layout
+
+\begin_layout Standard
+Al igual que antes, probaremos la Afirmación 2 en tres partes.
+\end_layout
+
+\begin_layout Proposition
+El grado promedio esperado es menor que 
+\begin_inset Formula $(r^{2}+r+2)\log(n)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Usamos la misma estrategia que antes para acotar la esperanza del número
+ total de todos en 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Dado que cada comunidad 
+\begin_inset Formula $G^{m}$
+\end_inset
+
+ es un subgrafo completo, podemos considerar 
+\begin_inset Formula $A^{m}$
+\end_inset
+
+, el subgrafo completo maximal que contiene a 
+\begin_inset Formula $G^{m}$
+\end_inset
+
+.
+ En este caso, tenemos 
+\begin_inset Formula $G_{n}=\underset{m=1}{\overset{M}{\bigcup}}A^{m}\times A^{m}$
+\end_inset
+
+.
+ De esta manera, si 
+\begin_inset Formula $\mathcal{E}$
+\end_inset
+
+ es el conjunto de aristas de 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+, tenemos
+\begin_inset Formula 
+\[
+|\mathcal{E}|\leq\underset{m=1}{\overset{M}{\sum}}\frac{|A^{m}|(|A^{m}|-1)}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Ahora bien, cada 
+\begin_inset Formula $A^{m}$
+\end_inset
+
+ contiene todos los nodos de 
+\begin_inset Formula $G^{m}$
+\end_inset
+
+, donde 
+\begin_inset Formula $|G^{m}|\leq\log(n)+1$
+\end_inset
+
+, así como los nodos 
+\begin_inset Formula $i$
+\end_inset
+
+ que hayan sido conectados a todos los nodos de 
+\begin_inset Formula $G^{m}$
+\end_inset
+
+ por ser esta su comunidad secundaria.
+ Hay como máximo 
+\begin_inset Formula $deg_{E}(m)$
+\end_inset
+
+ de estos nodos.
+ Entonces, tenemos 
+\begin_inset Formula $|A^{m}|\leq deg_{E}(m)+\log(n)+1$
+\end_inset
+
+.
+ Por otro lado, sabemos que 
+\begin_inset Formula $deg_{E}(m)\sim Bin(M-1,\frac{r\log(M)}{M})$
+\end_inset
+
+, de donde 
+\begin_inset Formula $\mathsf{E}[deg_{E}(m)]=r\log(M)\frac{M-1}{M}\leq r\log(M)$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathsf{E}[deg_{E}(m)^{2}]=r\log(M)(\frac{M-1}{M})(\frac{M-r\log(M)}{M})+(r\log(M)\frac{M-1}{M})^{2}\leq r\log(M)+(r\log(M))^{2}$
+\end_inset
+
+.
+ Reemplazando, se tiene 
+\begin_inset Formula 
+\begin{align*}
+\mathsf{E}[|\mathcal{E}|] & \leq\frac{1}{2}\underset{m=1}{\overset{M}{\sum}}\mathsf{E}[(deg_{E}(m)+\log(n)+1)(deg_{E}(m)+\log(n))]\\
+ & \leq\frac{1}{2}\underset{m=1}{\overset{M}{\sum}}\big(\mathsf{E}[deg_{E}(m)^{2}]+(\log(n)+1)\mathsf{E}[deg_{E}(m)]+(\log(n)+1)\log(n)\big)\\
+ & \leq\frac{M}{2}\big(r\log(M)+(r\log(M))^{2}+(\log(n)+1)r\log(M)+(\log(n)+1)\log(n)\big)\\
+ & \leq\frac{M}{2}\big((r^{2}+r+1)\log(n)^{2}+(2r+1)\log(n)\big).
+\end{align*}
+
+\end_inset
+
+Finalmente, observamos 
+\begin_inset Formula $\frac{M}{n}\leq\frac{1}{\log(n)-1}$
+\end_inset
+
+, lo que nos deja, para el grado promedio esperado,
+\begin_inset Formula 
+\begin{align*}
+\mathsf{E}[deg(G_{n})] & =\frac{2\mathsf{E}[|\mathcal{E}|]}{n}\leq\frac{(r^{2}+r+1)\log(n)^{2}+(2r+1)\log(n)}{\log(n)-1}\\
+\mathsf{E}[deg(G_{n})] & \leq(r^{2}+r+2)\log(n),
+\end{align*}
+
+\end_inset
+
+donde la última desigualdad cumple para un 
+\begin_inset Formula $n$
+\end_inset
+
+ suficientemente grande.
+\end_layout
+
+\begin_layout Proposition
+La agrupación local de 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ cumple 
+\begin_inset Formula $\overline{c}\geq\frac{1}{r+2}$
+\end_inset
+
+ casi ciertamente.
+\end_layout
+
+\begin_layout Proof
+Empezaremos acotando por debajo cada 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+.
+ Para ello, utilizaremos de nuevo el lemma 1 del apéndice A.
+ Escribamos 
+\begin_inset Formula $S_{i}=|\{m:\, i\in A^{m}\}|$
+\end_inset
+
+, donde 
+\begin_inset Formula $A^{m}$
+\end_inset
+
+ es, como antes, el subgrafo completo maximal que contiene a 
+\begin_inset Formula $G^{m}$
+\end_inset
+
+.
+ Tenemos 
+\begin_inset Formula $S_{i}\geq1$
+\end_inset
+
+ ya que 
+\begin_inset Formula $i\in A^{i}$
+\end_inset
+
+.
+ Además, cada vecino 
+\begin_inset Formula $j$
+\end_inset
+
+ debe estar en algún conjunto 
+\begin_inset Formula $A^{m}$
+\end_inset
+
+, de donde 
+\begin_inset Formula $V(i)=\underset{i\in A^{m}}{\cup}(A^{m}\setminus\{i\})$
+\end_inset
+
+.
+ Para aplicar el lemma 1, necesitamos encontrar una partición de 
+\begin_inset Formula $V(i)$
+\end_inset
+
+ en subgrafos completos.
+ Esto no siempre será posible; sin embargo, si quitamos algunas aristas
+ de 
+\begin_inset Formula $V(i)$
+\end_inset
+
+ (con cuidado de no quitar muchas) podemos particionar 
+\begin_inset Formula $V(i)$
+\end_inset
+
+ al mismo tiempo de obtener una cota inferior de 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ (pues, al quitar aristas, estamos reduciendo el número de triángulos presentes).
+ Entonces bien, quitemos de 
+\begin_inset Formula $V(i)$
+\end_inset
+
+ las aristas que unen dos conjuntos diferentes 
+\begin_inset Formula $A^{u},A^{v}$
+\end_inset
+
+, para obtener los conjuntos 
+\begin_inset Formula $A'^{u},A'^{v}$
+\end_inset
+
+.
+ Ahora 
+\begin_inset Formula $V(i)$
+\end_inset
+
+ se puede particionar en los subgrafos completos y disjuntos 
+\begin_inset Formula $A'^{m}\setminus\{i\},m=1,...,M$
+\end_inset
+
+.
+ Como no hemos cambiado el número de nodos, tenemos 
+\begin_inset Formula $|A'^{m}|\geq|G^{m}\setminus\{i\}|\geq\log(n)-2$
+\end_inset
+
+.
+ Entonces, por el lemma 1 del Apéndice A, tenemos 
+\begin_inset Formula $c_{i}\geq\frac{1}{S_{i}}-\frac{1}{\log(n)-2}.$
+\end_inset
+
+ Como 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ es todavía un número aleatorio, nos fijaremos más bien en la cota
+\begin_inset Formula 
+\[
+\overline{c}=\frac{1}{n}\underset{i=1}{\overset{n}{\sum}}c_{i}\geq\underset{S_{1},S_{2},...,S_{n}}{\min}\big(\frac{1}{n}\underset{i=1}{\overset{n}{\sum}}(\frac{1}{S_{i}}-\frac{1}{\log(n)-2})\big).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Vemos que el mínimo se alcanza cuando cada 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ toma su valor máximo, lo que resultaría en un valor cercano a cero.
+ Como queremos acotar 
+\begin_inset Formula $\overline{c}$
+\end_inset
+
+ por debajo, nos interesa, entonces, acotar por arriba los valores de 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+.
+ Para ello, estudiaremos los valores posibles de 
+\begin_inset Formula $\underset{i=1}{\overset{n}{\sum}}S_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Observamos que por cada arista de 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+, se añade (como máximo) una comunidad secundaria a algún nodo 
+\begin_inset Formula $i$
+\end_inset
+
+, lo que a su vez aumenta en 
+\begin_inset Formula $1$
+\end_inset
+
+ el valor de 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+.
+ Como, además, 
+\begin_inset Formula $S_{i}\geq1,\,\forall i$
+\end_inset
+
+, tenemos que el exceso de la suma de los 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ sobre 
+\begin_inset Formula $n$
+\end_inset
+
+ no será mayor al número de aristas de 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+.
+ Definamos la variabale aleatoria 
+\begin_inset Formula $X_{j},j=1,...,K=\frac{M(M-1)}{2}$
+\end_inset
+
+, con 
+\begin_inset Formula $X_{j}=1$
+\end_inset
+
+ cuando existe la arista 
+\begin_inset Formula $j$
+\end_inset
+
+ y 
+\begin_inset Formula $0$
+\end_inset
+
+ en otro caso.
+ Entonces, 
+\begin_inset Formula 
+\[
+\underset{i=1}{\overset{n}{\sum}}S_{i}\leq n+\underset{j=1}{\overset{K}{\sum}}X_{j}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Demostraremos que el número de aristas de 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ está acotado casi ciertamente, de donde la suma de los 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ también lo estará, con lo que podremos hallar el mínimo de la expresión
+ de 
+\begin_inset Formula $\overline{c}$
+\end_inset
+
+.
+ En efecto, escribamos 
+\begin_inset Formula $p=\frac{r\log(M)}{M}$
+\end_inset
+
+.
+ Tenemos 
+\begin_inset Formula $X_{j}\sim Ber(p)$
+\end_inset
+
+ y, por la desigualdad de Bernstein, 
+\begin_inset Formula 
+\[
+P\big(|\underset{j=1}{\overset{K}{\sum}}(X_{j}-p)|\geq\sqrt{\epsilon K}\big)\leq2\exp(-\frac{t^{2}}{1+\alpha/3}),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+donde 
+\begin_inset Formula $\sigma^{2}\leq p$
+\end_inset
+
+, 
+\begin_inset Formula $t=\frac{\sqrt{\epsilon}}{\sigma}$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha=\frac{2\sqrt{\epsilon}}{\sigma^{2}\sqrt{K}}\leq1$
+\end_inset
+
+ y 
+\begin_inset Formula $1+\alpha/3\leq2$
+\end_inset
+
+ para 
+\begin_inset Formula $M$
+\end_inset
+
+ suficientemente grande y 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ pequeño.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Ver Apéndice A.
+\end_layout
+
+\end_inset
+
+ En este caso, se tiene 
+\begin_inset Formula $\frac{t^{2}}{1+\alpha/3}\geq\sqrt{M}$
+\end_inset
+
+ y, entonces,
+\begin_inset Formula 
+\[
+P(\underset{j=1}{\overset{K}{\sum}}X_{j}<r\, n)\geq P\big(|\underset{j=1}{\overset{K}{\sum}}(X_{j}-p)|<\sqrt{\epsilon K}\big)\geq1-2\exp(-\sqrt{M}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Pero el evento de la mano izquierda implica 
+\begin_inset Formula $\underset{i=1}{\overset{n}{\sum}}S_{i}\leq(r+1)n$
+\end_inset
+
+, con lo que podemos pasar a minimizar la cota inferior de 
+\begin_inset Formula $\overline{c}$
+\end_inset
+
+.
+ Para ello, consideramos los valores posibles de la variable aleatoria 
+\begin_inset Formula $Y=\underset{S_{1},S_{2},...,S_{n}}{\min}\big(\frac{1}{n}\underset{i=1}{\overset{n}{\sum}}(\frac{1}{S_{i}}-\frac{1}{\log(n)-2})\big)$
+\end_inset
+
+.
+ Primero, estudiamos la solución al problema de minimización
+\begin_inset Formula 
+\[
+\underset{\underset{i}{\sum}S_{i}=H}{\min}\frac{1}{n}\underset{i=1}{\overset{n}{\sum}}\frac{1}{S_{i}},
+\]
+
+\end_inset
+
+ con un 
+\begin_inset Formula $H>0$
+\end_inset
+
+ arbitrario.
+ Supongamos que 
+\begin_inset Formula $R_{i},\, i=1,...n$
+\end_inset
+
+ son solución del problema.
+ Afirmamos que 
+\begin_inset Formula $R_{i}=R_{j},\,\forall i,j$
+\end_inset
+
+.
+ En efecto, si hubieran dos 
+\begin_inset Formula $R_{i},R_{j}$
+\end_inset
+
+ distintos, podríamos reemplazarlos por 
+\begin_inset Formula $R_{i}'=R_{j}'=\frac{R_{i}+R_{j}}{2}$
+\end_inset
+
+ y la suma 
+\begin_inset Formula $\underset{i=1}{\overset{n}{\sum}}\frac{1}{R_{i}}$
+\end_inset
+
+ sería menor.
+ Concluimos que la solución es 
+\begin_inset Formula $R_{1}=R_{2}=...=R_{n}=\frac{H}{n}$
+\end_inset
+
+ y el valor mínimo es 
+\begin_inset Formula $\frac{n}{H}$
+\end_inset
+
+.
+ Luego, tenemos,
+\begin_inset Formula 
+\[
+\underset{\underset{i}{\sum}S_{i}\leq(r+1)n}{\min}\frac{1}{n}\underset{i=1}{\overset{n}{\sum}}\frac{1}{S_{i}}=\min\{n,\frac{n}{2},\frac{n}{3},...,\frac{n}{(r+1)n}\}=\frac{1}{r+1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Hemos probado 
+\begin_inset Formula 
+\[
+P(\overline{c}\geq\frac{1}{r+2})\geq P(Y=\frac{1}{r+1}-\frac{1}{\log(n)-2})\geq P(\underset{i}{\sum}S_{i}\leq(r+1)n)\geq1-2\exp(-\sqrt{M}),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+donde la primera desigualdad se cumple para un 
+\begin_inset Formula $n$
+\end_inset
+
+ suficientemente grande.
+ Finalmente, por el segundo lemma de Borel-Cantelli,
+\begin_inset Formula 
+\[
+P(\underset{n}{\limsup\,}\overline{c}\geq\frac{1}{r+2})=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Si 
+\begin_inset Formula $r>2$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\frac{2\log(M)}{\log(2\log(M))}+1$
+\end_inset
+
+ es cota superior de crecimiento de 
+\begin_inset Formula $diam(G_{n})$
+\end_inset
+
+ casi ciertamente.
+\end_layout
+
+\begin_layout Proof
+Para 
+\begin_inset Formula $r>2$
+\end_inset
+
+, el grafo 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ es conexo casi ciertamente y 
+\begin_inset Formula $\frac{\log(M)}{\log(r\log(M))}$
+\end_inset
+
+ es cota superior del diámetro.
+ (Véase Chung y Lu, 2000, Teorema 3).
+ Como cada comunidad de 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ es un subgrafo completo, el resultado está probado.
+\end_layout
+
+\begin_layout Remark*
+El comportamiento del diámetro en el grafo de Erdos-Renyi ha sido estudiado
+ en muchos trabajos dferentes en las últimas seis décadas y queda fuera
+ del alcance de esta monografía.
+ Para un estudio detallado de la situación, véase Chung y Lu, 2000.
+ En este artículo se prueba que, en un grafo de Erdos-Renyi con 
+\begin_inset Formula $n$
+\end_inset
+
+ nodos y probabilidad 
+\begin_inset Formula $p=\frac{r\log(n)}{n}$
+\end_inset
+
+, si 
+\begin_inset Formula $r>2$
+\end_inset
+
+, el diámetro toma hasta tres valores distintos casi ciertamente, todos
+ ellos cercanos a
+\begin_inset Formula $\frac{\log(n)}{\log(np)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+Una generalización más fuerte: construcción inversa
+\end_layout
+
+\begin_layout Standard
+Evidentemente, para demostrar que el modelo generalizado es small-world,
+ Cont y Tanimura solo utilizan ciertas características del grafo auxiliar
+ 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+.
+ En efecto, 
+\begin_inset Formula $r$
+\end_inset
+
+ es escogido de tal manera de que 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ cumpla
+\end_layout
+
+\begin_layout Itemize
+El grado promedio esperado en 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ es sub-logarítmico en 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+El número de aristas de E está acotado por arriba con una probabilidad exponenci
+al en 
+\begin_inset Formula $\sqrt{M}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+El diámetro de 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ está acotado por 
+\begin_inset Formula $\log(M)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Estas restricciones en la distribución del grado, el número de aristas y
+ el diámetro, logran que, al reemplazar los nodos de 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ por grafos completos de cierto tamaño, el grafo 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ cumpla restricciones parecidas sobre el grado y el diámetro, a la vez que
+ se genera una nueva característica: el coeficiente de agrupación es alto.
+\end_layout
+
+\begin_layout Standard
+Para una nueva generalización del modelo, en vez de empezar a construir
+ 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ y tomar un grafo auxiliar 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+, empezaremos la construcción con un 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ arbitrario que cumpla las características deseadas y reemplazaremos sus
+ nodos por subgrafos completos con un número apropiado de nodos.
+ Estudiaremos cómo las características de 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ se heredan en 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ en los casos en que 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ es determinístico o aleatorio.
+ Cabe resaltar que en ambos de estos casos, el resultado será un grafo aleatorio.
+\end_layout
+
+\begin_layout Subsection*
+Construcción inversa: caso determinístico
+\end_layout
+
+\begin_layout Standard
+Consideremos un grafo arbitrario 
+\begin_inset Formula $E$
+\end_inset
+
+, con 
+\begin_inset Formula $|E|=n$
+\end_inset
+
+ y fijemos un número natural 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+.
+ Construimos un grafo asociado, 
+\begin_inset Formula $G$
+\end_inset
+
+, análogamente a las construcciones anteriores, en tres pasos.
+\end_layout
+
+\begin_layout Enumerate
+Por cada nodo 
+\begin_inset Formula $i\in E$
+\end_inset
+
+, añadimos un subgrafo completo 
+\begin_inset Formula $G^{i}$
+\end_inset
+
+ a 
+\begin_inset Formula $G$
+\end_inset
+
+ con 
+\begin_inset Formula $\delta$
+\end_inset
+
+ nodos.
+ Si 
+\begin_inset Formula $h\in G^{i}$
+\end_inset
+
+, esta es la comunidad original de 
+\begin_inset Formula $h$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Por cada arista 
+\begin_inset Formula $(i,j)\in E$
+\end_inset
+
+, escogemos de manera eleatoria y unirme un nodo 
+\begin_inset Formula $h\in G^{i}\cup G^{j}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $h\in G^{i}$
+\end_inset
+
+, unimos 
+\begin_inset Formula $h$
+\end_inset
+
+ con todos los nodos de 
+\begin_inset Formula $G^{j}$
+\end_inset
+
+; Si 
+\begin_inset Formula $h\in G^{j}$
+\end_inset
+
+, lo unimos con todos los nodos de 
+\begin_inset Formula $G^{i}$
+\end_inset
+
+.
+ De esta manera, asignamos una comunidad secundaria para 
+\begin_inset Formula $h$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Unimos cada par de nodos 
+\begin_inset Formula $h,k\in G$
+\end_inset
+
+ si ellos comparten al menos una comunidad secundaria.
+ 
+\end_layout
+
+\begin_layout Standard
+Identificamos cada nodo 
+\begin_inset Formula $i\in E$
+\end_inset
+
+ con la comunidad 
+\begin_inset Formula $G^{i}\subset G$
+\end_inset
+
+; llamamos a 
+\begin_inset Formula $E$
+\end_inset
+
+ el 
+\emph on
+hipergrafo 
+\emph default
+de 
+\begin_inset Formula $G$
+\end_inset
+
+; y a 
+\begin_inset Formula $G$
+\end_inset
+
+, el 
+\emph on
+hipografo 
+\emph default
+de 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ Observamos que 
+\begin_inset Formula $|G|=\delta\times n$
+\end_inset
+
+ y que, si 
+\begin_inset Formula $h\in G^{i}$
+\end_inset
+
+, el número 
+\begin_inset Formula $S_{h}$
+\end_inset
+
+ de comunidades de 
+\begin_inset Formula $h$
+\end_inset
+
+ (originales y secundarias) cumple 
+\begin_inset Formula $S_{h}\leq1+\deg_{E}(i)$
+\end_inset
+
+.
+ Observamos también que, aún cuando 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ es determinístico, su hipografo es aleatorio.
+ Además, si tenemos dos modelos de crecimiento de grafos 
+\begin_inset Formula $(E_{n})_{n=1}^{\infty}$
+\end_inset
+
+ y 
+\begin_inset Formula $(G_{n})_{n=1}^{\infty}$
+\end_inset
+
+ en el que cada 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ es hipografo de 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+, para todo 
+\begin_inset Formula $n$
+\end_inset
+
+, decimos simplemente que 
+\begin_inset Formula $(E_{n})_{n=1}^{\infty}$
+\end_inset
+
+ es hipergrafo de 
+\begin_inset Formula $(G_{n})_{n=1}^{\infty}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En este caso determinístico, las características de 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ se transmiten a su hipografo según la siguiente proposición.
+ Recordemos que denotamos con letras caligráficas (
+\begin_inset Formula $\mathcal{E}$
+\end_inset
+
+) el conjunto de aristas de un grafo (
+\begin_inset Formula $E$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Proposition
+Sea 
+\begin_inset Formula $(E_{n})_{n=1}^{\infty}$
+\end_inset
+
+ un modelo determinístico arbitrario y 
+\begin_inset Formula $(G_{n})_{n=1}^{\infty}$
+\end_inset
+
+ su hipografo.
+ Pongamos 
+\begin_inset Formula $\overline{c}_{n}$
+\end_inset
+
+ para el coeficiente de agrupación local promedio de 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+.
+ Entonces,
+\end_layout
+
+\begin_layout Proposition
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumi}{
+\backslash
+alph{enumi}.
+ }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $diam(G_{n})\leq2\, diam(E_{n})+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $|\mathcal{G}_{n}|=\frac{\delta(\delta-1)}{2}n+\delta|\mathcal{E}_{n}|+t_{n}$
+\end_inset
+
+, donde 
+\begin_inset Formula $t_{n}$
+\end_inset
+
+ es una variable aleatoria que cumple 
+\begin_inset Formula $t_{n}\leq\frac{1}{2}\underset{i\in E}{\sum}\deg(i)^{2}-|\mathcal{E}_{n}|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Si existe una constante 
+\begin_inset Formula $H_{n}\in\mathbb{N}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $H_{n}\geq\frac{|\mathcal{E}_{n}|}{\delta n}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\overline{c}_{n}\geq\frac{1}{H_{n}+1}-\frac{1}{\delta-1}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+La propiedad a) se cumple de manera trivial desde que cada comunidad 
+\begin_inset Formula $G_{n}^{i}$
+\end_inset
+
+ es un subgrafo completo.
+\end_layout
+
+\begin_layout Proof
+Para la b), consideremos las aristas que se añaden a 
+\begin_inset Formula $G$
+\end_inset
+
+ en cada uno de los pasos de su construcción.
+ En el primer paso, se añaden 
+\begin_inset Formula $\frac{\delta(\delta-1)}{2}$
+\end_inset
+
+ aristas por cada nodo en 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ En el segundo paso, añadimos 
+\begin_inset Formula $\delta$
+\end_inset
+
+ aristas por cada arista en 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ Estas suman en total 
+\begin_inset Formula $n\frac{\delta(\delta-1)}{2}+\delta|\mathcal{E}_{n}|$
+\end_inset
+
+.
+ Escribamos 
+\begin_inset Formula $t_{n}$
+\end_inset
+
+ para las aristas añadidas a 
+\begin_inset Formula $G$
+\end_inset
+
+ en el tercer paso; llamémosles 
+\begin_inset Quotes eld
+\end_inset
+
+terciarias
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Añadimos una arista terciaria entre los nodos 
+\begin_inset Formula $h\in G^{m_{1}},k\in G^{m_{2}}$
+\end_inset
+
+ solo cuando ocurren las siguientes tres cosas al mismo tiempo: 1) 
+\begin_inset Formula $i\in E$
+\end_inset
+
+ es adyacente a ambos 
+\begin_inset Formula $m_{1},m_{2}\in E$
+\end_inset
+
+; 2) 
+\begin_inset Formula $G^{i}$
+\end_inset
+
+ es comunidad secundaria de 
+\begin_inset Formula $h$
+\end_inset
+
+; y 3) 
+\begin_inset Formula $G^{i}$
+\end_inset
+
+ es comunidad secundaria de 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ Ahora bien, 2) y 3) solo se pueden cumplir cuando se cumple 1).
+ De ahí que, para la existencia de una arista terciaria, requerimos primero
+ que exista un camino 
+\begin_inset Formula $(m_{1},i,m_{2})$
+\end_inset
+
+ en 
+\begin_inset Formula $E$
+\end_inset
+
+ y, en ese caso, puede o puede no existir una arista terciaria correspondiente
+ en 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ De todo ello, concluimos que podemos acotar 
+\begin_inset Formula $t_{n}$
+\end_inset
+
+ por el número de caminos de la forma 
+\begin_inset Formula $(m_{1},i,m_{2})$
+\end_inset
+
+ en 
+\begin_inset Formula $E$
+\end_inset
+
+, para todo 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ Para un 
+\begin_inset Formula $i$
+\end_inset
+
+ dado, existen exactamente 
+\begin_inset Formula $\binom{\deg_{E}(i)}{2}$
+\end_inset
+
+ de estos caminos, de donde se deduce la cota
+\begin_inset Formula 
+\[
+t_{n}\leq\frac{1}{2}\underset{i\in E}{\sum}\deg_{E}(i)(\deg_{E}(i)-1).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Para la c), por el razonamiento de las pruebas anteriores y teniendo en
+ cuenta 
+\begin_inset Formula $\underset{h\in G_{n}}{\sum}S_{h}\leq n\delta+|\mathcal{E}_{n}|\leq(H_{n}+1)n\delta$
+\end_inset
+
+, tenemos
+\begin_inset Formula 
+\[
+\overline{c}_{n}\geq\underset{S_{1},...,S_{n\delta}}{\min}(\frac{1}{n\delta}\underset{h\in G_{n}}{\sum}\frac{1}{S_{h}}-\frac{1}{\delta-1})\geq\frac{1}{H_{n}+1}-\frac{1}{\delta-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Construcción inversa: caso aleatorio.
+\end_layout
+
+\begin_layout Standard
+Sea el grafo aleatorio 
+\begin_inset Formula $E$
+\end_inset
+
+, con 
+\begin_inset Formula $|E|=n$
+\end_inset
+
+.
+ Construimos su hipografo 
+\begin_inset Formula $G$
+\end_inset
+
+ en tres pasos.
+ El primer y tercer paso son iguales que antes.
+ Para la asignación de comunidades secundarias, consideremos la probabilidad
+ 
+\begin_inset Formula $p_{ij}$
+\end_inset
+
+ de que los nodos 
+\begin_inset Formula $i,j\in E$
+\end_inset
+
+ estén conectados por una arista.
+ Así pues, en el segundo paso de la construcción de 
+\begin_inset Formula $G$
+\end_inset
+
+, con una probabilidad 
+\begin_inset Formula $p_{ij}$
+\end_inset
+
+, escogemos un nodo de manera uniforme en 
+\begin_inset Formula $G^{i}\cup G^{j}$
+\end_inset
+
+ y lo conectamos a todos los nodos de la otra comunidad.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Notamos que solo estamos usando las variables 
+\begin_inset Formula $a_{ij}\sim Ber(p_{ij})$
+\end_inset
+
+, cuya distribución está inducida por 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ Dos grafos aleatorios pueden inducir las mismas 
+\begin_inset Formula $a_{ij}$
+\end_inset
+
+ al mismo tiempo de ser ellos grafos aleatorios distintos.
+ Concluimos que no podemos recuperar el hipergrafo 
+\begin_inset Formula $E$
+\end_inset
+
+ conociendo solamente su hipografo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este caso, tenemos la siguiente proposición sobre las características
+ del hipografo de un grafo aleatorio.
+\end_layout
+
+\begin_layout Proposition
+Sea 
+\begin_inset Formula $(E_{n})_{n=1}^{\infty}$
+\end_inset
+
+ un modelo aleatorio arbitrario y 
+\begin_inset Formula $(G_{n})_{n=1}^{\infty}$
+\end_inset
+
+ su hipografo.
+ Entonces,
+\end_layout
+
+\begin_layout Proposition
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumi}{
+\backslash
+alph{enumi}.
+ }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumii}{
+\backslash
+roman{enumii}.
+ }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $diam(G_{n})\leq2\, diam(E_{n})+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathsf{E}[\deg(G_{n})]\leq\delta-1+\frac{2\delta-1}{\delta}\mathsf{E}[\deg(E_{n})]+\frac{1}{\delta n}\mathsf{E}[\underset{m\in E_{n}}{\sum}\deg_{E_{n}}(m)^{2}]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Sea una constante 
+\begin_inset Formula $H\in\mathbb{N}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $P(H\geq\frac{|\mathcal{E}_{n}|}{\delta n})\to1$
+\end_inset
+
+, entonces 
+\begin_inset Formula $P(\overline{c}_{n}\geq\frac{1}{H+1}-\frac{1}{\delta-1})\to1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $P(\underset{n}{\limsup}\, H\geq\frac{|\mathcal{E}_{n}|}{\delta n})=1$
+\end_inset
+
+, entonces 
+\begin_inset Formula $P(\underset{n}{\limsup}\,\overline{c}_{n}\geq\frac{1}{H+1}-\frac{1}{\delta-1})=1.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+a) es inmediata.
+ Para b), basta definir 
+\begin_inset Formula $A_{n}^{m}$
+\end_inset
+
+ como el subgrafo maximal que cumple 
+\begin_inset Formula $G_{n}^{m}\subset A_{n}^{m}$
+\end_inset
+
+ y observar 
+\begin_inset Formula $G_{n}=\underset{m\in E_{n}}{\cup}A_{n}^{m}\times A_{n}^{m}$
+\end_inset
+
+ y 
+\begin_inset Formula $|A_{n}^{m}|\leq\delta+\deg_{E_{n}}(m)$
+\end_inset
+
+, para luego reemplazar en 
+\begin_inset Formula $\frac{n\delta}{2}\mathsf{E}[\deg(G_{n})]=\mathsf{E}[|\mathcal{G}_{n}|]\leq\frac{1}{2}\underset{m\in E_{n}}{\sum}|A_{n}^{m}|(|A_{n}^{m}|-1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Para c), aplicamos el razonamiento de las pruebas anteriores para obtener
+ 
+\begin_inset Formula 
+\begin{multline*}
+P(\overline{c}_{n}\geq\frac{1}{H+1}-\frac{1}{\delta-1})\geq P(\underset{h\in G_{n}}{\sum}S_{h}\leq(H+1)n\delta)\geq P(H\geq\frac{|\mathcal{E}_{n}|}{\delta n}).
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Chapter
 \start_of_appendix
 Algunos resultados
@@ -2368,7 +4280,7 @@ Por otro lado, notamos que
 \begin_inset Formula $\underset{j}{\sum}hq_{j}\leq\underset{j}{\sum}q_{j}^{2}$
 \end_inset
 
-, ó 
+, es decir, 
 \begin_inset Formula $\mathcal{B}\leq\frac{1}{h}$
 \end_inset
 
@@ -2499,6 +4411,140 @@ Borel-Cantelli.
 
 \color red
 POR PROBAR
+\end_layout
+
+\begin_layout Lemma
+Borel-Cantelli 2
+\end_layout
+
+\begin_layout Proof
+
+\color red
+POR PROBAR
+\end_layout
+
+\begin_layout Lemma
+Desigualdad de Bernstein
+\end_layout
+
+\begin_layout Proof
+
+\color red
+POR PROBAR
+\end_layout
+
+\begin_layout Chapter
+Cont & Tanimura: Errata
+\end_layout
+
+\begin_layout Standard
+En el desarrollo de este trabajo, se encontraron algunos errores en el artículo
+ de Cont y Tanimura, algunos más graves que otros.
+ Listamos algunos de ellos a continuación.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $j\leq\tau_{\sqrt{M}}\implies\overline{F_{j-1}}\leq\sqrt{M}$
+\end_inset
+
+.
+ Haciendo 
+\begin_inset Formula $\delta$
+\end_inset
+
+ tan grande como queramos, podemos encontrar fácilmente contraejemplos para
+ esta afirmación.
+ En el caso 
+\begin_inset Formula $j\leq\tau_{\sqrt{M}}$
+\end_inset
+
+ solo podemos afirmar 
+\begin_inset Formula $\overline{F_{j-1}}\leq\delta\sqrt{M}$
+\end_inset
+
+.
+ Sin embargo, esto no es suficiente para lo que necesitamos y debemos replantear
+ el argumento.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L=\min\{l:\, e^{l}\geq\frac{M}{2}\}\implies L<\log(M)$
+\end_inset
+
+.
+ Se tiene, en realidad, 
+\begin_inset Formula $L<\log(M)+1$
+\end_inset
+
+.
+ Afortunadamente, este error no afecta el trabajo subsecuente y podemos
+ sustituir la cota real en el argumento sin problemas.
+\end_layout
+
+\begin_layout Itemize
+Se usan intercambiablemente los eventos 
+\begin_inset Formula $\{|C_{j}|\geq e|C_{j-1}|\}$
+\end_inset
+
+ y 
+\begin_inset Formula $\{|C_{j}|\geq3|C_{j-1}|\}$
+\end_inset
+
+, cuando estos son iguales solo en el caso 
+\begin_inset Formula $j=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+El conjunto 
+\begin_inset Formula $C_{j}$
+\end_inset
+
+ contiene las comunidades que se pueden alcanzar en 
+\emph on
+como máximo 
+\emph default
+
+\begin_inset Formula $j$
+\end_inset
+
+ pasos, no exactamente en 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+pg.
+ 16: Se dice que el grado total del nodo 
+\begin_inset Formula $i$
+\end_inset
+
+ es igual a 
+\begin_inset Formula $2k+X_{i}$
+\end_inset
+
+, cuando en realidad se tiene 
+\begin_inset Formula $deg_{sw}(i)\leq2k+X_{i}$
+\end_inset
+
+.
+ En la siguiente línea se usa bien, pero está mal escrito.
+\end_layout
+
+\begin_layout Itemize
+En la última página, se demuestra que 
+\begin_inset Formula $\overline{c}\leq\frac{1}{3}$
+\end_inset
+
+ casi ciertamente, cuando en realidad se quiere lo contrario: 
+\begin_inset Formula $\overline{c}\geq\frac{1}{3}$
+\end_inset
+
+.
 \end_layout
 
 \end_body
