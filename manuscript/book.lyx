@@ -3450,29 +3450,29 @@ Estas restricciones en la distribución del grado, el número de aristas y
 \begin_layout Standard
 Para una nueva generalización del modelo, en vez de empezar a construir
  
-\begin_inset Formula $G_{n}$
+\begin_inset Formula $G$
 \end_inset
 
  y tomar un grafo auxiliar 
-\begin_inset Formula $E_{n}$
+\begin_inset Formula $E$
 \end_inset
 
 , empezaremos la construcción con un 
-\begin_inset Formula $E_{n}$
+\begin_inset Formula $E$
 \end_inset
 
  arbitrario que cumpla las características deseadas y reemplazaremos sus
  nodos por subgrafos completos con un número apropiado de nodos.
  Estudiaremos cómo las características de 
-\begin_inset Formula $E_{n}$
+\begin_inset Formula $E$
 \end_inset
 
  se heredan en 
-\begin_inset Formula $G_{n}$
+\begin_inset Formula $G$
 \end_inset
 
  en los casos en que 
-\begin_inset Formula $E_{n}$
+\begin_inset Formula $E$
 \end_inset
 
  es determinístico o aleatorio.
@@ -3480,11 +3480,11 @@ Para una nueva generalización del modelo, en vez de empezar a construir
 \end_layout
 
 \begin_layout Subsection*
-Construcción inversa: caso determinístico
+Construcción inversa: caso aleatorio.
 \end_layout
 
 \begin_layout Standard
-Consideremos un grafo arbitrario 
+Consideremos un grafo aleatorio 
 \begin_inset Formula $E$
 \end_inset
 
@@ -3538,6 +3538,19 @@ Por cada arista
 \begin_inset Formula $(i,j)\in E$
 \end_inset
 
+, consideremos la probabilidad 
+\begin_inset Formula $p_{ij}$
+\end_inset
+
+ de que exista la arista 
+\begin_inset Formula $(i,j)\in E$
+\end_inset
+
+.
+ Con probabilidad 
+\begin_inset Formula $p_{ij,}$
+\end_inset
+
 , escogemos de manera eleatoria y unirme un nodo 
 \begin_inset Formula $h\in G^{i}\cup G^{j}$
 \end_inset
@@ -3569,6 +3582,38 @@ Por cada arista
 \end_inset
 
 .
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Notamos que para construir 
+\begin_inset Formula $G$
+\end_inset
+
+ solo estamos usando las variables 
+\begin_inset Formula $a_{ij}\sim Ber(p_{ij})$
+\end_inset
+
+, cuya distribución está inducida por 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ Dos grafos aleatorios pueden inducir las mismas 
+\begin_inset Formula $a_{ij}$
+\end_inset
+
+ al mismo tiempo de ser ellos grafos aleatorios distintos.
+ Concluimos que no podemos recuperar el hipergrafo 
+\begin_inset Formula $E$
+\end_inset
+
+ conociendo solamente su hipografo.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -3595,6 +3640,10 @@ Identificamos cada nodo
 
  el 
 \emph on
+
+\begin_inset Formula $\delta-$
+\end_inset
+
 hipergrafo 
 \emph default
 de 
@@ -3607,13 +3656,25 @@ de
 
 , el 
 \emph on
+
+\begin_inset Formula $\delta-$
+\end_inset
+
 hipografo 
 \emph default
 de 
 \begin_inset Formula $E$
 \end_inset
 
-.
+, o simplemente 
+\emph on
+hipergrafo 
+\emph default
+e 
+\emph on
+hipografo 
+\emph default
+si no hay ambigüedad.
  Observamos que 
 \begin_inset Formula $|G|=\delta\times n$
 \end_inset
@@ -3635,11 +3696,6 @@ de
 \end_inset
 
 .
- Observamos también que, aún cuando 
-\begin_inset Formula $E_{n}$
-\end_inset
-
- es determinístico, su hipografo es aleatorio.
  Además, si tenemos dos modelos de crecimiento de grafos 
 \begin_inset Formula $(E_{n})_{n=1}^{\infty}$
 \end_inset
@@ -3649,22 +3705,26 @@ de
 \end_inset
 
  en el que cada 
-\begin_inset Formula $G_{n}$
-\end_inset
-
- es hipografo de 
 \begin_inset Formula $E_{n}$
 \end_inset
 
-, para todo 
-\begin_inset Formula $n$
+ es 
+\begin_inset Formula $\delta_{n}-$
+\end_inset
+
+hipergrafo de 
+\begin_inset Formula $G_{n}$
 \end_inset
 
 , decimos simplemente que 
 \begin_inset Formula $(E_{n})_{n=1}^{\infty}$
 \end_inset
 
- es hipergrafo de 
+ es 
+\begin_inset Formula $\delta_{n}-$
+\end_inset
+
+hipergrafo de 
 \begin_inset Formula $(G_{n})_{n=1}^{\infty}$
 \end_inset
 
@@ -3672,8 +3732,8 @@ de
 \end_layout
 
 \begin_layout Standard
-En este caso determinístico, las características de 
-\begin_inset Formula $E_{n}$
+En este caso, las características de 
+\begin_inset Formula $(E_{n})$
 \end_inset
 
  se transmiten a su hipografo según la siguiente proposición.
@@ -3681,8 +3741,12 @@ En este caso determinístico, las características de
 \begin_inset Formula $\mathcal{E}$
 \end_inset
 
+,
+\begin_inset Formula $\mathcal{G}$
+\end_inset
+
 ) el conjunto de aristas de un grafo (
-\begin_inset Formula $E$
+\begin_inset Formula $E,G$
 \end_inset
 
 ).
@@ -3693,20 +3757,15 @@ Sea
 \begin_inset Formula $(E_{n})_{n=1}^{\infty}$
 \end_inset
 
- un modelo determinístico arbitrario y 
+ un modelo aleatorio arbitrario y 
 \begin_inset Formula $(G_{n})_{n=1}^{\infty}$
 \end_inset
 
- su hipografo.
- Pongamos 
-\begin_inset Formula $\overline{c}_{n}$
+ su 
+\begin_inset Formula $\delta_{n}-$
 \end_inset
 
- para el coeficiente de agrupación local promedio de 
-\begin_inset Formula $G_{n}$
-\end_inset
-
-.
+hipografo.
  Entonces,
 \end_layout
 
@@ -3726,6 +3785,18 @@ alph{enumi}.
  }
 \end_layout
 
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumii}{
+\backslash
+roman{enumii}.
+ }
+\end_layout
+
 \end_inset
 
 
@@ -3740,10 +3811,153 @@ alph{enumi}.
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $|\mathcal{G}_{n}|=\frac{\delta(\delta-1)}{2}n+\delta|\mathcal{E}_{n}|+t_{n}$
+\begin_inset Formula $\mathsf{E}[\deg(G_{n})]\leq\delta_{n}-1+\frac{2\delta_{n}-1}{\delta_{n}}\mathsf{E}[\deg(E_{n})]+\frac{1}{\delta_{n}n}\mathsf{E}[\underset{m\in E_{n}}{\sum}\deg_{E_{n}}(m)^{2}]$
 \end_inset
 
-, donde 
+.
+\end_layout
+
+\begin_layout Enumerate
+Sea una constante 
+\begin_inset Formula $H\in\mathbb{N}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $P(H\geq\frac{|\mathcal{E}_{n}|}{\delta_{n}n})\to1$
+\end_inset
+
+, entonces 
+\begin_inset Formula $P(\overline{c}_{n}\geq\frac{1}{H+1}-\frac{1}{\delta_{n}-1})\to1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $P(\underset{n}{\limsup}\, H\geq\frac{|\mathcal{E}_{n}|}{\delta_{n}n})=1$
+\end_inset
+
+, entonces 
+\begin_inset Formula $P(\underset{n}{\limsup}\,\overline{c}_{n}\geq\frac{1}{H+1}-\frac{1}{\delta_{n}-1})=1.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+a) es inmediata.
+ Para b), basta definir 
+\begin_inset Formula $A_{n}^{m}$
+\end_inset
+
+ como el subgrafo maximal que cumple 
+\begin_inset Formula $G_{n}^{m}\subset A_{n}^{m}$
+\end_inset
+
+ y observar 
+\begin_inset Formula $G_{n}=\underset{m\in E_{n}}{\cup}A_{n}^{m}\times A_{n}^{m}$
+\end_inset
+
+ y 
+\begin_inset Formula $|A_{n}^{m}|\leq\delta_{n}+\deg_{E_{n}}(m)$
+\end_inset
+
+, para luego reemplazar en 
+\begin_inset Formula $\frac{n\delta_{n}}{2}\mathsf{E}[\deg(G_{n})]=\mathsf{E}[|\mathcal{G}_{n}|]\leq\frac{1}{2}\underset{m\in E_{n}}{\sum}|A_{n}^{m}|(|A_{n}^{m}|-1)$
+\end_inset
+
+.
+ Para c), aplicamos el razonamiento de las pruebas anteriores para obtener
+ 
+\begin_inset Formula 
+\begin{multline*}
+\{\overline{c}_{n}\geq\frac{1}{H+1}-\frac{1}{\delta_{n}-1}\}\supset\{\underset{h\in G_{n}}{\sum}S_{h}\leq(H+1)n\delta_{n}\}\supset\{H\geq\frac{|\mathcal{E}_{n}|}{\delta_{n}n}\}.
+\end{multline*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Construcción inversa: caso determinístico
+\end_layout
+
+\begin_layout Standard
+Sea el grafo determinístico 
+\begin_inset Formula $E$
+\end_inset
+
+, con 
+\begin_inset Formula $|E|=n$
+\end_inset
+
+.
+ La construcción del hipografo 
+\begin_inset Formula $G$
+\end_inset
+
+ es análoga a la anterior, con la única diferencia de que ahora todas las
+ probabilidades 
+\begin_inset Formula $p_{ij}$
+\end_inset
+
+ son iguales a 
+\begin_inset Formula $0$
+\end_inset
+
+ ó 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Observamos que, aún cuando 
+\begin_inset Formula $E$
+\end_inset
+
+ es determinístico, su hipografo es aleatorio.
+ En este caso, los resultados (a) y (c) de la proposición anterior son muy
+ similares al caso aleatorio, y por ello los omitimos.
+ Sin embargo, tenemos un resultado más fuerte sobre el número de aristas
+ del hipografo 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+Sea 
+\begin_inset Formula $(E_{n})_{n=1}^{\infty}$
+\end_inset
+
+ un modelo determinístico arbitrario y 
+\begin_inset Formula $(G_{n})_{n=1}^{\infty}$
+\end_inset
+
+ su 
+\begin_inset Formula $\delta_{n}-$
+\end_inset
+
+hipografo.
+ Entonces, 
+\begin_inset Formula 
+\[
+|\mathcal{G}_{n}|=\frac{\delta_{n}(\delta_{n}-1)}{2}n+\delta_{n}|\mathcal{E}_{n}|+t_{n},
+\]
+
+\end_inset
+
+donde 
 \begin_inset Formula $t_{n}$
 \end_inset
 
@@ -3754,39 +3968,14 @@ alph{enumi}.
 .
 \end_layout
 
-\begin_layout Enumerate
-Si existe una constante 
-\begin_inset Formula $H_{n}\in\mathbb{N}$
-\end_inset
-
- tal que 
-\begin_inset Formula $H_{n}\geq\frac{|\mathcal{E}_{n}|}{\delta n}$
-\end_inset
-
-, entonces 
-\begin_inset Formula $\overline{c}_{n}\geq\frac{1}{H_{n}+1}-\frac{1}{\delta-1}$
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
 \begin_layout Proof
-La propiedad a) se cumple de manera trivial desde que cada comunidad 
-\begin_inset Formula $G_{n}^{i}$
-\end_inset
-
- es un subgrafo completo.
-\end_layout
-
-\begin_layout Proof
-Para la b), consideremos las aristas que se añaden a 
+Consideremos las aristas que se añaden a 
 \begin_inset Formula $G$
 \end_inset
 
  en cada uno de los pasos de su construcción.
  En el primer paso, se añaden 
-\begin_inset Formula $\frac{\delta(\delta-1)}{2}$
+\begin_inset Formula $\frac{\delta_{n}(\delta_{n}-1)}{2}$
 \end_inset
 
  aristas por cada nodo en 
@@ -3795,7 +3984,7 @@ Para la b), consideremos las aristas que se añaden a
 
 .
  En el segundo paso, añadimos 
-\begin_inset Formula $\delta$
+\begin_inset Formula $\delta_{n}$
 \end_inset
 
  aristas por cada arista en 
@@ -3804,7 +3993,7 @@ Para la b), consideremos las aristas que se añaden a
 
 .
  Estas suman en total 
-\begin_inset Formula $n\frac{\delta(\delta-1)}{2}+\delta|\mathcal{E}_{n}|$
+\begin_inset Formula $n\frac{\delta_{n}(\delta_{n}-1)}{2}+\delta_{n}|\mathcal{E}_{n}|$
 \end_inset
 
 .
@@ -3830,11 +4019,11 @@ terciarias
 \end_inset
 
  solo cuando ocurren las siguientes tres cosas al mismo tiempo: 1) 
-\begin_inset Formula $i\in E$
+\begin_inset Formula $\exists i\in E$
 \end_inset
 
- es adyacente a ambos 
-\begin_inset Formula $m_{1},m_{2}\in E$
+ adyacente a ambos 
+\begin_inset Formula $m_{1},m_{2}$
 \end_inset
 
 ; 2) 
@@ -3906,236 +4095,97 @@ t_{n}\leq\frac{1}{2}\underset{i\in E}{\sum}\deg_{E}(i)(\deg_{E}(i)-1).
 
 \end_layout
 
-\begin_layout Proof
-Para la c), por el razonamiento de las pruebas anteriores y teniendo en
- cuenta 
-\begin_inset Formula $\underset{h\in G_{n}}{\sum}S_{h}\leq n\delta+|\mathcal{E}_{n}|\leq(H_{n}+1)n\delta$
-\end_inset
-
-, tenemos
-\begin_inset Formula 
-\[
-\overline{c}_{n}\geq\underset{S_{1},...,S_{n\delta}}{\min}(\frac{1}{n\delta}\underset{h\in G_{n}}{\sum}\frac{1}{S_{h}}-\frac{1}{\delta-1})\geq\frac{1}{H_{n}+1}-\frac{1}{\delta-1}.
-\]
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection*
-Construcción inversa: caso aleatorio.
+Herencia de 
+\emph on
+small-worldness
 \end_layout
 
 \begin_layout Standard
-Sea el grafo aleatorio 
-\begin_inset Formula $E$
-\end_inset
-
-, con 
-\begin_inset Formula $|E|=n$
-\end_inset
-
-.
- Construimos su hipografo 
-\begin_inset Formula $G$
-\end_inset
-
- en tres pasos.
- El primer y tercer paso son iguales que antes.
- Para la asignación de comunidades secundarias, consideremos la probabilidad
+La siguiente proposición indica características suficientes que deben cumplir
  
-\begin_inset Formula $p_{ij}$
-\end_inset
-
- de que los nodos 
-\begin_inset Formula $i,j\in E$
-\end_inset
-
- estén conectados por una arista.
- Así pues, en el segundo paso de la construcción de 
-\begin_inset Formula $G$
-\end_inset
-
-, con una probabilidad 
-\begin_inset Formula $p_{ij}$
-\end_inset
-
-, escogemos un nodo de manera uniforme en 
-\begin_inset Formula $G^{i}\cup G^{j}$
-\end_inset
-
- y lo conectamos a todos los nodos de la otra comunidad.
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Notamos que solo estamos usando las variables 
-\begin_inset Formula $a_{ij}\sim Ber(p_{ij})$
-\end_inset
-
-, cuya distribución está inducida por 
-\begin_inset Formula $E$
-\end_inset
-
-.
- Dos grafos aleatorios pueden inducir las mismas 
-\begin_inset Formula $a_{ij}$
-\end_inset
-
- al mismo tiempo de ser ellos grafos aleatorios distintos.
- Concluimos que no podemos recuperar el hipergrafo 
-\begin_inset Formula $E$
-\end_inset
-
- conociendo solamente su hipografo.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-En este caso, tenemos la siguiente proposición sobre las características
- del hipografo de un grafo aleatorio.
-\end_layout
-
-\begin_layout Proposition
-Sea 
-\begin_inset Formula $(E_{n})_{n=1}^{\infty}$
-\end_inset
-
- un modelo aleatorio arbitrario y 
-\begin_inset Formula $(G_{n})_{n=1}^{\infty}$
-\end_inset
-
- su hipografo.
- Entonces,
-\end_layout
-
-\begin_layout Proposition
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-labelenumi}{
-\backslash
-alph{enumi}.
- }
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-labelenumii}{
-\backslash
-roman{enumii}.
- }
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset Formula $diam(G_{n})\leq2\, diam(E_{n})+1$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\mathsf{E}[\deg(G_{n})]\leq\delta-1+\frac{2\delta-1}{\delta}\mathsf{E}[\deg(E_{n})]+\frac{1}{\delta n}\mathsf{E}[\underset{m\in E_{n}}{\sum}\deg_{E_{n}}(m)^{2}]$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Enumerate
-Sea una constante 
-\begin_inset Formula $H\in\mathbb{N}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Si 
-\begin_inset Formula $P(H\geq\frac{|\mathcal{E}_{n}|}{\delta n})\to1$
-\end_inset
-
-, entonces 
-\begin_inset Formula $P(\overline{c}_{n}\geq\frac{1}{H+1}-\frac{1}{\delta-1})\to1.$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Si 
-\begin_inset Formula $P(\underset{n}{\limsup}\, H\geq\frac{|\mathcal{E}_{n}|}{\delta n})=1$
-\end_inset
-
-, entonces 
-\begin_inset Formula $P(\underset{n}{\limsup}\,\overline{c}_{n}\geq\frac{1}{H+1}-\frac{1}{\delta-1})=1.$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Proof
-a) es inmediata.
- Para b), basta definir 
-\begin_inset Formula $A_{n}^{m}$
-\end_inset
-
- como el subgrafo maximal que cumple 
-\begin_inset Formula $G_{n}^{m}\subset A_{n}^{m}$
-\end_inset
-
- y observar 
-\begin_inset Formula $G_{n}=\underset{m\in E_{n}}{\cup}A_{n}^{m}\times A_{n}^{m}$
+\begin_inset Formula $(E_{n})$
 \end_inset
 
  y 
-\begin_inset Formula $|A_{n}^{m}|\leq\delta+\deg_{E_{n}}(m)$
+\begin_inset Formula $(\delta_{n})$
 \end_inset
 
-, para luego reemplazar en 
-\begin_inset Formula $\frac{n\delta}{2}\mathsf{E}[\deg(G_{n})]=\mathsf{E}[|\mathcal{G}_{n}|]\leq\frac{1}{2}\underset{m\in E_{n}}{\sum}|A_{n}^{m}|(|A_{n}^{m}|-1)$
+ para que su 
+\begin_inset Formula $\delta_{n}-$
 \end_inset
 
-.
+hipografo sea un modelo 
+\emph on
+small-world.
 \end_layout
 
-\begin_layout Proof
-Para c), aplicamos el razonamiento de las pruebas anteriores para obtener
- 
-\begin_inset Formula 
-\begin{multline*}
-P(\overline{c}_{n}\geq\frac{1}{H+1}-\frac{1}{\delta-1})\geq P(\underset{h\in G_{n}}{\sum}S_{h}\leq(H+1)n\delta)\geq P(H\geq\frac{|\mathcal{E}_{n}|}{\delta n}).
-\end{multline*}
+\begin_layout Proposition
+Supongamos que 
+\begin_inset Formula $(E_{n})$
+\end_inset
 
+ y 
+\begin_inset Formula $(\delta_{n})$
+\end_inset
+
+ cumplen
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $diam(E_{n})\leq O(\log(n\delta_{n}))$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E[\deg(E_{n})]\leq\delta_{n}\leq O(\log(n\delta_{n}))$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E[\frac{1}{n}\underset{i\in E_{n}}{\sum}\deg_{E_{n}}(i)^{2}]\leq\delta_{n}^{2}$
 \end_inset
 
 
 \end_layout
 
 \end_deeper
+\begin_layout Proposition
+Entonces el 
+\begin_inset Formula $\delta_{n}-$
+\end_inset
+
+hipografo de 
+\begin_inset Formula $(E_{n})$
+\end_inset
+
+ es un modelo 
+\emph on
+small-world.
+\end_layout
+
+\begin_layout Proof
+De (a) y (b) de una proposición anterior, los requisitos de diámetro (casi
+ ciertamente) y grado promedio (en esperanza) de 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ son inmediatos; es decir estos son menores o iguales a 
+\begin_inset Formula $\log(n\delta_{n})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Qué hacer con H y el coeficiente de agrupación????
+\end_layout
+
 \begin_layout Chapter
 \start_of_appendix
 Algunos resultados
