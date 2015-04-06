@@ -1,0 +1,971 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package none
+\inputencoding default
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Cambiar de variables a Bernoullis independientes
+\end_layout
+
+\begin_layout Standard
+Consideremos el conjunto 
+\begin_inset Formula $B\subset\{1,2,...M\}$
+\end_inset
+
+ y las variables aleatorias 
+\begin_inset Formula $(\overline{X}_{n})_{n\in\mathbb{N}}$
+\end_inset
+
+ i.i.d.
+ de manera uniforme sobre 
+\begin_inset Formula $\{1,2,...,M\}$
+\end_inset
+
+.
+ A partir de las 
+\begin_inset Formula $\overline{X}_{n}$
+\end_inset
+
+, podemos definir las variables 
+\begin_inset Formula $(Y_{n})_{n\in\mathbb{N}}$
+\end_inset
+
+ de la siguiente manera: 
+\begin_inset Formula $Y_{n}$
+\end_inset
+
+ será igual a 
+\begin_inset Formula $1$
+\end_inset
+
+ cuando 
+\begin_inset Formula $\overline{X}_{n}$
+\end_inset
+
+ pertenezca a 
+\begin_inset Formula $B$
+\end_inset
+
+ y 
+\begin_inset Formula $0$
+\end_inset
+
+ de otra manera.
+ Claramente, las variables 
+\begin_inset Formula $Y_{n}$
+\end_inset
+
+ son i.i.d.
+ y siguen una distribución Bernoulli con parámetro 
+\begin_inset Formula $p=\frac{|B|}{M}$
+\end_inset
+
+.
+ Dentro de este contexto, podemos responder la pregunta 
+\emph on
+¿cuántas de las 
+\begin_inset Formula $\overline{X}_{n}$
+\end_inset
+
+ cayeron dentro de 
+\begin_inset Formula $B$
+\end_inset
+
+?,
+\emph default
+ simplemente considerando la suma 
+\begin_inset Formula $\sum Y_{n}$
+\end_inset
+
+, que tiene distribución binomial.
+ Sin embargo, cuando consideramos la pregunta más complicada 
+\emph on
+¿cuántos valores diferentes, dentro de 
+\begin_inset Formula $B$
+\end_inset
+
+, tomaron las variables 
+\begin_inset Formula $\overline{X}_{n}$
+\end_inset
+
+?
+\emph default
+, las 
+\begin_inset Formula $Y_{n}$
+\end_inset
+
+ ya no nos serán suficientes.
+\end_layout
+
+\begin_layout Standard
+Para responder esta segunda pregunta, necesitaremos definir una nueva sucesión
+ de variables, que llamaremos simplemente 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+.
+ Ellas no tendrán distribuciones elementales; por ello estudiaremos precisamente
+ en qué sentido podemos compararlas o intercambiarlas con las Bernoulli
+ 
+\begin_inset Formula $Y_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Definamos pues, la sucesión de variables 
+\begin_inset Formula $(X_{n})_{n\in\mathbb{N}}$
+\end_inset
+
+ de la siguiente manera.
+ Pongamos 
+\begin_inset Formula $X_{1}=1_{B}(\overline{X}_{1})$
+\end_inset
+
+ y definamos recursivamente las siguientes según
+\begin_inset Formula 
+\[
+X_{k}=1_{B\setminus\{\overline{X}_{1},\overline{X}_{2},...,\overline{X}_{k-1}\}}(\overline{X}_{k}),k=2,3,...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es decir, 
+\begin_inset Formula $X_{1}$
+\end_inset
+
+ es igual a 
+\begin_inset Formula $1$
+\end_inset
+
+ cuando 
+\begin_inset Formula $\overline{X}_{1}$
+\end_inset
+
+ cae en 
+\begin_inset Formula $B$
+\end_inset
+
+ y 
+\begin_inset Formula $0$
+\end_inset
+
+ de otra manera; y 
+\begin_inset Formula $X_{k}$
+\end_inset
+
+ es igual a 
+\begin_inset Formula $1$
+\end_inset
+
+ cuando 
+\begin_inset Formula $\overline{X}_{k}$
+\end_inset
+
+ cae en 
+\begin_inset Formula $B$
+\end_inset
+
+ pero no es igual a ninguno de los valores tomados hasta el momento por
+ las variables anteriores.
+ 
+\end_layout
+
+\begin_layout Standard
+Llamemos 
+\begin_inset Formula $\mathsf{P}_{B}$
+\end_inset
+
+ a la ley del vector infinito 
+\begin_inset Formula $(X_{n})$
+\end_inset
+
+ sobre 
+\begin_inset Formula $\{0,1\}^{\mathbb{N}}$
+\end_inset
+
+.
+ Notamos que esta solo depende del tamaño de 
+\begin_inset Formula $B$
+\end_inset
+
+ y no de sus elementos, así que podemos escribir 
+\begin_inset Formula $\mathsf{P}_{b}=\mathsf{P}_{B}$
+\end_inset
+
+, para todo subconjunto 
+\begin_inset Formula $B\subset\{1,2,...,M\}$
+\end_inset
+
+ de tamaño 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Así, tenemos una familia de medidas de probabilidad 
+\begin_inset Formula $\{P_{b}:0\leq b\leq M\}$
+\end_inset
+
+ sobre el espacio 
+\begin_inset Formula $\{0,1\}^{\mathbb{N}}$
+\end_inset
+
+.
+ Además, observamos que 
+\begin_inset Formula $X_{1}$
+\end_inset
+
+ tiene distribución 
+\begin_inset Formula $Ber(\frac{b}{M})$
+\end_inset
+
+ y que 
+\begin_inset Formula $X_{2}$
+\end_inset
+
+ se distribuye según 
+\begin_inset Formula $Ber(\frac{b}{M})$
+\end_inset
+
+ en el caso en que 
+\begin_inset Formula $X_{1}=0$
+\end_inset
+
+, o según 
+\begin_inset Formula $Ber(\frac{b-1}{M})$
+\end_inset
+
+ en el caso en que 
+\begin_inset Formula $X_{1}=1$
+\end_inset
+
+.
+ Es decir, tenemos
+\begin_inset Formula 
+\[
+\mathsf{P}_{b}(X_{2}=1\big|X_{1}=z)=\frac{b-z}{M}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este hecho lo podemos interpretar de la siguiente manera.
+ Si construimos el vector 
+\begin_inset Formula $(X_{n})$
+\end_inset
+
+ en función a un conjunto 
+\begin_inset Formula $B$
+\end_inset
+
+ con 
+\begin_inset Formula $|B|=b$
+\end_inset
+
+, la primera componente 
+\begin_inset Formula $X_{1}$
+\end_inset
+
+ siempre tiene distribución 
+\begin_inset Formula $Ber(\frac{b}{M})$
+\end_inset
+
+.
+ Por la observación anterior, si sabemos que 
+\begin_inset Formula $X_{1}=z$
+\end_inset
+
+, sabremos también que 
+\begin_inset Formula $X_{2}\sim Ber(\frac{b-z}{M})$
+\end_inset
+
+.
+ En este caso, podemos considerar 
+\begin_inset Formula $X_{2}$
+\end_inset
+
+ como la primera componente de un vector 
+\begin_inset Formula $(X'_{n})$
+\end_inset
+
+ definido sobre un conjunto 
+\begin_inset Formula $B'$
+\end_inset
+
+ de tamaño 
+\begin_inset Formula $b'=b-z$
+\end_inset
+
+ y con ley 
+\begin_inset Formula $\mathsf{P}_{b-z}$
+\end_inset
+
+.
+ Es decir, tenemos
+\begin_inset Formula 
+\[
+\mathsf{P}_{b}(X_{2}=w\big|X_{1}=z)=\mathsf{P}_{b-z}(X'_{1}=w).
+\]
+
+\end_inset
+
+Generalizamos esta observación con el siguiente resultado.
+\end_layout
+
+\begin_layout Lemma*
+Sean los vectores 
+\begin_inset Formula $(X_{n}),(X'_{n})$
+\end_inset
+
+ construidos como antes, con leyes 
+\begin_inset Formula $\mathsf{P}_{b}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathsf{P}_{b-z}$
+\end_inset
+
+, respectivamente y escojamos 
+\begin_inset Formula $l\in\mathbb{N}$
+\end_inset
+
+.
+ Entonces, se cumple
+\begin_inset Formula 
+\[
+\mathsf{P}_{b}(X_{2}=x_{2},...,X_{l+1}=x_{l+1}\big|X_{1}=z)=P_{b-z}(X'_{1}=x_{2},...,X'_{l}=x_{l+1}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Basta expresar el término de la mano izquierda como 
+\begin_inset Formula 
+\[
+\frac{1}{P_{b}(X_{1}=z)}\overset{l+1}{\underset{i=1}{\prod}}\mathsf{P}_{b}(X_{i}=x_{i}\big|\underset{m=2}{\overset{i-1}{\cap}}X_{m}=x_{m}\bigcap X_{1}=z)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+y efectuar el cambio de variable discutido anteriormente para obtener
+\begin_inset Formula 
+\[
+\overset{l+1}{\underset{i=1}{\prod}}\mathsf{P}_{b-z}(X'_{i}=x_{i+1}\big|\underset{m=1}{\overset{i-1}{\cap}}X'_{m}=x_{m+1}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El lemma nos dice que, si consideramos la distribución de la sucesión 
+\begin_inset Formula $(X_{n})$
+\end_inset
+
+ a partir de un momento determinado, ella solo va a depender de cuántos
+ elementos de 
+\begin_inset Formula $B$
+\end_inset
+
+ hayamos encontrado hasta ese instante.
+ Este resultado nos da la motivación y el detalle técnico necesarios para
+ la siguiente proposición.
+\end_layout
+
+\begin_layout Proposition
+Sea el vector 
+\begin_inset Formula $(X_{n})$
+\end_inset
+
+ con ley 
+\begin_inset Formula $\mathsf{P}_{b}$
+\end_inset
+
+ y escojamos 
+\begin_inset Formula $l\in\mathbb{N}$
+\end_inset
+
+.
+ Supongamos que 
+\begin_inset Formula $\varphi:\{0,1\}^{l}\to\mathbb{R}$
+\end_inset
+
+ es una función medible.
+ Escribamos 
+\begin_inset Formula $\mathsf{E}_{z}$
+\end_inset
+
+ para la esperanza con respecto a la probabilidad 
+\begin_inset Formula $\mathsf{P}_{z}$
+\end_inset
+
+.
+ Entonces, se cumple
+\begin_inset Formula 
+\[
+\mathsf{E}_{b}[\varphi(X_{2},...,X_{l+1})\big|X_{1}]=\mathsf{E}_{b-X_{1}}[\varphi(X_{1},X_{2},...,X_{l})],
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+donde, por abuso de notación, entendemos que las variables 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ del término de la mano derecha definen el vector 
+\begin_inset Formula $(X'_{n})$
+\end_inset
+
+ con ley 
+\begin_inset Formula $\mathsf{P}_{b-X_{1}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Escribamos 
+\begin_inset Formula $h(x)=$
+\end_inset
+
+
+\begin_inset Formula $\mathsf{E}_{b-x}[\varphi(X_{1},X_{2},...,X_{l})]$
+\end_inset
+
+ y 
+\begin_inset Formula $A_{z}=\{X_{1}=z\}$
+\end_inset
+
+.
+ Queremos demostrar
+\begin_inset Formula 
+\[
+\underset{A_{z}}{\int}\varphi(X_{2},...,X_{l+1})d\mathsf{P}_{b}=\underset{A_{z}}{\int}h(X_{1})d\mathsf{P}_{b},\ z=0,1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Pues bien, tenemos
+\begin_inset Formula 
+\begin{align*}
+\underset{A_{z}}{\int}\varphi(X_{2},...,X_{l+1})d\mathsf{P}_{b} & =\underset{x_{1},...,x_{l+1}=0}{\overset{1}{\sum}}1_{z}(x_{1})\varphi(x_{2},\ldots,x_{l+1})\mathsf{P}_{b}(X_{1}=x_{1},X_{2}=x_{2},\ldots X_{l+1}=x_{l+1})\\
+ & =\underset{x_{2},...,x_{l+1}=0}{\overset{1}{\sum}}\varphi(x_{2},\ldots,x_{l+1})\mathsf{P}_{b}(X_{2}=x_{2},\ldots X_{l+1}=x_{l+1}\big|X_{1}=z)P_{b}(X_{1}=z).
+\end{align*}
+
+\end_inset
+
+ Ahora aplicamos el lemma y cambiamos de nombre 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ por 
+\begin_inset Formula $x_{i-1}$
+\end_inset
+
+ para obtener
+\begin_inset Formula 
+\begin{align*}
+\underset{A_{z}}{\int}\varphi(X_{2},...,X_{l+1})d\mathsf{P}_{b} & =\underset{x_{1},...,x_{l}=0}{\overset{1}{\sum}}\varphi(x_{1},\ldots,x_{l})\mathsf{P}_{b-z}(X_{1}=x_{1},\ldots X_{l}=x_{l})P_{b}(X_{1}=z).\\
+ & =\mathsf{E}_{b-z}[\varphi(X_{1},...,X_{l})]P_{b}(X_{1}=z)\\
+ & =\underset{A_{z}}{\int}h(X_{1})d\mathsf{P}_{b}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta propiedad Markoviana la usaremos pronto para probar nuestro resultado
+ principal.
+\end_layout
+
+\begin_layout Standard
+Ahora bien, consideremos los vectores 
+\begin_inset Formula $X=(X_{n})$
+\end_inset
+
+ y 
+\begin_inset Formula $X'=(X'_{n})$
+\end_inset
+
+ con leyes 
+\begin_inset Formula $\mathsf{P}_{b}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathsf{P}_{b'}$
+\end_inset
+
+ respectivamente.
+ 
+\begin_inset Formula $(X_{n})$
+\end_inset
+
+ está definido sobre 
+\begin_inset Formula $\{0,1\}^{\mathbb{N}}$
+\end_inset
+
+ y 
+\begin_inset Formula $(X'_{n})$
+\end_inset
+
+, en una copia posiblemente diferente del mismo espacio.
+ Si queremos compararlos de una manera clara, primero necesitamos que ambos
+ estén definidos en el mismo espacio de probabilidad.
+ Esto lo lograremos mediante un acoplamiento.
+ Consideremos, entonces, un espacio de probabilidad 
+\begin_inset Formula $(\Omega,\mathcal{F},\mathbb{P})$
+\end_inset
+
+ y los conjuntos 
+\begin_inset Formula $B'\begin{subarray}{c}
+\subset B\subset\end{subarray}\{1,2,...,M\}$
+\end_inset
+
+, donde 
+\begin_inset Formula $|B|=b\geq b'=|B'|$
+\end_inset
+
+, donde definimos los vectores 
+\begin_inset Formula $X,X'$
+\end_inset
+
+ y ellos inducen las medidas 
+\begin_inset Formula $\mathsf{P}_{b}=\mathbb{P}\circ X^{-1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathsf{P}_{b'}=\mathbb{P}\circ X'^{-1}$
+\end_inset
+
+ en 
+\begin_inset Formula $\{0,1\}^{\mathbb{N}}$
+\end_inset
+
+.
+ Ahora, tenemos que las variables 
+\begin_inset Formula $X_{n},X'_{n},n=1,2,...$
+\end_inset
+
+, las componentes de los vectores, están también definidas en 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Sin embargo, empezamos nuestra discusión con el objetivo de comparar unas
+ variables definidas en 
+\begin_inset Formula $\{0,1\}^{\mathbb{N}}$
+\end_inset
+
+, no en 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+ Sean, entonces, unas variables 
+\begin_inset Formula $\xi_{n},\xi'_{n}:\{0,1\}^{\mathbb{N}}\to\{1,2,...M\}$
+\end_inset
+
+ donde los vectores 
+\begin_inset Formula $(\xi_{1},\xi_{2},...),(\xi'_{1},\xi'_{2},...)$
+\end_inset
+
+ también tienen leyes 
+\begin_inset Formula $\mathsf{P}_{b},\mathsf{P}_{b'}$
+\end_inset
+
+.
+ Compararemos estas sucesiones de variables valiéndonos de los vectores
+ acoplados 
+\begin_inset Formula $X,X'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En los siguientes resultados, escribimos 
+\begin_inset Formula $\mathbb{E}$
+\end_inset
+
+ para la esperanza en 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ respecto de la medida 
+\begin_inset Formula $\mathbb{P}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathsf{E}_{c}$
+\end_inset
+
+ para la esperanza tomada en 
+\begin_inset Formula $\{0,1\}^{\mathbb{N}}$
+\end_inset
+
+ respecto de 
+\begin_inset Formula $\mathsf{P}_{c}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+Fijemos 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $g:\{0,1\}^{k}\to\mathbb{R}$
+\end_inset
+
+ una función creciente y supongamos 
+\begin_inset Formula $b\geq b'$
+\end_inset
+
+.
+ Entonces,
+\end_layout
+
+\begin_layout Proposition
+\begin_inset Formula 
+\[
+\mathsf{E}_{b}[g(\xi_{1},...,\xi_{k})]\geq\mathsf{E}_{b'}[g(\xi'_{1},...,\xi'_{k})].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Observamos que pada cada 
+\begin_inset Formula $\omega\in\Omega$
+\end_inset
+
+ se cumplen las desigualdades 
+\begin_inset Formula $X_{k}(\omega)\geq X'_{k}(\omega),\forall k$
+\end_inset
+
+.
+ Luego, tenemos 
+\begin_inset Formula $g(X_{1},...,X_{k})\geq g(X'_{1},...,X'_{k})$
+\end_inset
+
+ por ser 
+\begin_inset Formula $g$
+\end_inset
+
+ creciente y tenemos,
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\mathsf{E}_{b}[g(\xi_{1},...,\xi_{k})]=\mathbb{E}[g(X_{1},...,X_{k})]\geq\mathbb{E}[g(X'_{1},...,X'_{k})]=\mathsf{E}_{b'}[g(\xi'_{1},...,\xi'_{k})].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+Ahora se hace obvia la necesidad del acoplamiento.
+ Si pudiéramos decir 
+\begin_inset Formula $\xi\geq\xi'$
+\end_inset
+
+, no habría necesidad de acoplamiento.
+ Sin embargo, estas familias de funciones están definidas en espacios diferentes
+ y compararlas directamente no tiene sentido.
+\end_layout
+
+\begin_layout Standard
+Regresemos a nuestro objetivo principal.
+ Queremos relacionar las variables 
+\begin_inset Formula $\xi_{1},\xi_{2},...$
+\end_inset
+
+ con unas variables 
+\begin_inset Formula $Y_{n}\sim Ber(p)$
+\end_inset
+
+, que podemos considerarlas definidas en 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+ Usando las proposiciones anteriores, tenemos el siguiente resultado.
+\end_layout
+
+\begin_layout Theorem
+Sea 
+\begin_inset Formula $1\leq k\leq b\leq M$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+ una función de 
+\begin_inset Formula $k$
+\end_inset
+
+ variables.
+ Entonces, si 
+\begin_inset Formula $p\leq\frac{b-k+1}{M}$
+\end_inset
+
+, entonces se cumple
+\begin_inset Formula 
+\[
+\mathsf{E}_{b}[g(\xi_{1},...,\xi_{k})]\geq\mathbb{E}[g(Y_{1},...,Y_{k})],
+\]
+
+\end_inset
+
+ donde 
+\begin_inset Formula $(\xi_{i})$
+\end_inset
+
+ son i.i.d.
+ construidas como anteriormente, y 
+\begin_inset Formula $(Y_{i})$
+\end_inset
+
+ son i.i.d.
+ de distribución 
+\begin_inset Formula $Ber(p)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Procedemos por inducción en 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ Para 
+\begin_inset Formula $k=1$
+\end_inset
+
+, observamos que 
+\begin_inset Formula $\xi_{1}$
+\end_inset
+
+ tiene distribución 
+\begin_inset Formula $Ber(\frac{b}{M})$
+\end_inset
+
+, igual que 
+\begin_inset Formula $Y_{1}$
+\end_inset
+
+.
+ Entonces, claramente 
+\begin_inset Formula $\mathsf{E}_{b}[g(\xi_{1})]=\mathbb{E}[g(Y_{1})]$
+\end_inset
+
+.
+ Ahora, suponemos que el teorema está probado para 
+\begin_inset Formula $k=l$
+\end_inset
+
+ y queremos probar 
+\begin_inset Formula $\mathsf{E}_{b}[g(\xi_{1},...,\xi_{l+1})]\geq\mathbb{E}[g(Y_{1},...,Y_{l+1})]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Pues bien, escribamos
+\begin_inset Formula 
+\[
+\mathsf{E}_{b}[g(\xi_{1},...,\xi_{l+1})]=\mathsf{E}_{b}[\mathsf{E}_{b}[g(\xi_{1},...,\xi_{l+1})\big|\xi_{1}]]=\mathsf{E}_{b}[h(\xi_{1})],
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+donde 
+\begin_inset Formula $h:\{0,1\}\to\mathbb{R}$
+\end_inset
+
+ es una función medible que cumple
+\begin_inset Formula 
+\[
+h(z)=\mathsf{E}_{b}[g(z,...,\xi_{l+1})\big|\xi_{1}]=\mathsf{E}_{b}[g_{z}(\xi_{2},...,\xi_{l+1})\big|\xi_{1}],z=0,1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Por la proposición 1, podemos escribir
+\begin_inset Formula 
+\[
+h(z)=\mathsf{E}_{b}[g_{z}(\xi_{2},...,\xi_{l+1})\big|\xi_{1}]=\mathsf{E}_{b-z}[g_{z}(\xi{}_{1},...,\xi{}_{l})].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Por la hipótesis de inducción, para 
+\begin_inset Formula $p\leq\frac{b-l}{M}$
+\end_inset
+
+ tenemos
+\begin_inset Formula 
+\[
+h(z)\geq\mathbb{E}[g_{z}(Y{}_{1},...,Y{}_{l})]=\mathbb{E}[g(z,Y_{2},...,Y_{l+1})]=\overline{h}(z),z=0,1,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+donde 
+\begin_inset Formula $\overline{h}$
+\end_inset
+
+ es creciente de una variable y las variables 
+\begin_inset Formula $Y_{n}$
+\end_inset
+
+ son i.i.d.
+ según 
+\begin_inset Formula $Ber(p)$
+\end_inset
+
+ y las 
+\begin_inset Formula $Y{}_{n}\sim Ber(p-\frac{z}{M})$
+\end_inset
+
+.
+ Aplicamos el Teorema con 
+\begin_inset Formula $k=1$
+\end_inset
+
+ para 
+\begin_inset Formula $\overline{h}$
+\end_inset
+
+ para obtener 
+\begin_inset Formula 
+\[
+\mathsf{E}_{b}[g(\xi_{1},...,\xi_{l+1})]=\mathsf{E}_{b}[h(\xi_{1})]\geq\mathsf{E}_{b}[\overline{h}(\xi_{1})]\geq\mathbb{E}[\overline{h}(Y_{1})]=\mathbb{E}[g(Y_{1},Y_{2},...,Y_{l+1})].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

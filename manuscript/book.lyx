@@ -341,8 +341,8 @@ vecinos
 \end_inset
 
 .
- Esto no causará ambigüedad, ya que los nodos son números, mientras que
- las aristas son pares ordenados.
+ Esto no causará ambigüedad, ya que los nodos se representan con números,
+ mientras que las aristas, con pares ordenados.
  De esta manera, escribiremos 
 \begin_inset Formula $i\in G$
 \end_inset
@@ -373,7 +373,10 @@ en el grafo
 posible
 \emph default
  del grafo.
- Por ejemplo, si 
+\end_layout
+
+\begin_layout Standard
+Por ejemplo, si 
 \begin_inset Formula $G=(\{1,2,3\},\{(1,2),(2,1)\})$
 \end_inset
 
@@ -401,8 +404,12 @@ posible
 \end_layout
 
 \begin_layout Standard
-A continuación, definiremos los espacios con los que trabajaremos.
- Llamaremos 
+A continuación, definiremos los espacios en los que trabajaremos.
+ Dado 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, llamaremos 
 \begin_inset Formula $\Gamma_{n}$
 \end_inset
 
@@ -419,11 +426,11 @@ A continuación, definiremos los espacios con los que trabajaremos.
 \end_inset
 
 Usualmente, identificaremos cada grafo con su matriz de adyacencia.
- De ahí que el conjunto 
+ Esto es posible pues el conjunto 
 \begin_inset Formula $\Gamma_{n}$
 \end_inset
 
- esté en biyección con el conjunto de matrices simétricas con entradas 
+ está en biyección con el conjunto de matrices simétricas con entradas 
 \begin_inset Formula $0$
 \end_inset
 
@@ -575,7 +582,7 @@ Grado y grado promedio
 Estos indicadores son las cantidades típicas que se manejan en todas las
  áreas de la Teoría de Grafos.
  
-\begin_inset Formula $deg(i)$
+\begin_inset Formula $deg_{G}(i)$
 \end_inset
 
  es el número de vecinos del nodo 
@@ -624,7 +631,7 @@ c_{i}=\frac{\underset{j\neq i}{\overset{|G|}{\sum}}\underset{k\neq j,k\neq i}{\s
 \end_layout
 
 \begin_layout Standard
-Esta expresión puede parecer atemorizante a primer vista.
+Esta expresión puede parecer atemorizante a primera vista.
  Sin embargo, ella se lee como sigue.
  
 \emph on
@@ -786,7 +793,7 @@ Definidos nuestro espacio medible y funciones medibles sobre él, pasaremos
 \end_layout
 
 \begin_layout Subsection*
-Grafos e Indicadores aleatorios
+Grafos e indicadores aleatorios
 \end_layout
 
 \begin_layout Standard
@@ -824,11 +831,11 @@ Dado un grafo
 \begin_inset Formula $G\in\Gamma_{\infty}$
 \end_inset
 
-, aleatorio o determinístico, definimos 
+, aleatorio o determinístico, definimos la variable aleatoria 
 \begin_inset Formula $U:\Omega\to G\times G\setminus\{(i,i):\, i\in G\}$
 \end_inset
 
-, un par de nodos distintos 
+, que representa un par de nodos distintos 
 \begin_inset Formula $u\neq v$
 \end_inset
 
@@ -1024,7 +1031,7 @@ Comportamiento asintótico de indicadores aleatorios
 \end_layout
 
 \begin_layout Standard
-Ahora, consideremos un modelo de creimiento aleatorio 
+Ahora consideremos un modelo de creimiento aleatorio 
 \begin_inset Formula $(G_{n})_{n=1}^{\infty}$
 \end_inset
 
@@ -1200,7 +1207,7 @@ fácil
 \end_inset
 
  para todos los nodos cumplir con ambas restricciones de agrupación y distancia.
- Quizás se cumplen hasta por coincidencia.
+ Quizás se cumplen por coincidencia.
  Queremos estudiar aquellos grafos que cumplen con la definición, sin que
  sea una consecuencia directa de la alta conectividad inherente (grado).
 \end_layout
@@ -1257,7 +1264,7 @@ small-world.
 \emph default
 El grafo completo no cumple con la limitación del grado; los otros tres
  no cumplen con la cota de agrupación.
- (Los árboles no pueden tener triángulos).
+ (Las estrellas y los árboles no pueden tener triángulos).
 \end_layout
 
 \begin_layout Description
@@ -1647,7 +1654,11 @@ Escribimos
 \end_inset
 
 .
- El número de aristas en 
+ Como los 
+\begin_inset Formula $A^{m}$
+\end_inset
+
+ son grafos completos, ll número de aristas en 
 \begin_inset Formula $G$
 \end_inset
 
@@ -1691,7 +1702,7 @@ i.e., el vector
  Entonces, tenemos
 \begin_inset Formula 
 \[
-\mathsf{E}[S_{m}]=\frac{n}{M}=\delta,\quad\mathsf{Var}[S_{m}]=\frac{n}{M}\big(1-\frac{1}{M}\big)=\delta\big(1-\frac{1}{M}\big),\quad\mathsf{E}[S_{m}^{2}]=\delta\big(1-\frac{1}{M}\big)+\delta^{2}
+\mathsf{E}[S_{m}]=\frac{n}{M}=\delta,\quad\mathsf{E}[S_{m}^{2}]=\delta\big(1-\frac{1}{M}\big)+\delta^{2}.
 \]
 
 \end_inset
@@ -1758,13 +1769,13 @@ Fijado un nodo
 
  sus comunidades de origen y destino, respectivamente.
  Entonces, podemos particionar 
-\begin_inset Formula $G(i)$
+\begin_inset Formula $V(i)$
 \end_inset
 
  de la siguiente manera:
 \begin_inset Formula 
 \[
-G(i)=(G^{j}\cup\{u:\, X_{u}=G^{j}\})\setminus\{i\}\bigcup(G^{k}\cup\{u:\, X_{u}=G^{k}\})\setminus\{i\}.
+V(i)=(G^{j}\cup\{u:\, X_{u}=G^{j}\}\setminus\{i\})\bigcup(G^{k}\cup\{u:\, X_{u}=G^{k}\}\setminus\{i\}).
 \]
 
 \end_inset
@@ -1899,8 +1910,7 @@ Definimos el proceso de descubrimiento de comunidades
 \begin_inset Formula $G^{1}\equiv1$
 \end_inset
 
-, recursivamente.
- 
+, recursivamente de la siguiente manera: 
 \begin_inset Formula 
 \[
 C_{0}=\{1\},\qquad N_{k}=\{i\in G_{n}:\:\exists d\in C_{k},\: i\in d\}=\underset{d\in C_{k}}{\bigcup}G^{d}
@@ -1995,7 +2005,7 @@ Para un
 \end_inset
 
  dado, estimamos la probabilidad 
-\begin_inset Formula $P(\underset{j=1}{\overset{T}{\cap}}E_{k})=\underset{j=1}{\overset{T}{\prod}}P(E_{k}|\underset{m=1}{\overset{j-1}{\cap}}E_{m})$
+\begin_inset Formula $P(\underset{j=1}{\overset{T}{\cap}}E_{j})=\underset{j=1}{\overset{T}{\prod}}P(E_{j}|\underset{m=1}{\overset{j-1}{\cap}}E_{m})$
 \end_inset
 
 .
@@ -2183,7 +2193,7 @@ Ahora bien, condicionalmente en
 
 .
  Es decir, cuando hay 
-\begin_inset Formula $e\mu-1$
+\begin_inset Formula $3\mu-1$
 \end_inset
 
  comunidades nuevas
@@ -2508,7 +2518,7 @@ Sean
 \begin_inset Formula $j$
 \end_inset
 
- pasos, a partir desde 
+ pasos, a partir de 
 \begin_inset Formula $G^{u}$
 \end_inset
 
@@ -3357,7 +3367,7 @@ El comportamiento del diámetro en el grafo de Erdos-Renyi ha sido estudiado
  en muchos trabajos dferentes en las últimas seis décadas y queda fuera
  del alcance de esta monografía.
  Para un estudio detallado de la situación, véase Chung y Lu, 2000.
- En este artículo se prueba que, en un grafo de Erdos-Renyi con 
+ En ese artículo se prueba que en un grafo de Erdos-Renyi con 
 \begin_inset Formula $n$
 \end_inset
 
@@ -3901,7 +3911,11 @@ Sea el grafo determinístico
 \begin_inset Formula $|E|=n$
 \end_inset
 
-.
+ y 
+\begin_inset Formula $\delta$
+\end_inset
+
+ un número natural.
  La construcción del hipografo 
 \begin_inset Formula $G$
 \end_inset
@@ -4175,7 +4189,8 @@ De (a) y (b) de una proposición anterior, los requisitos de diámetro (casi
 \begin_inset Formula $G_{n}$
 \end_inset
 
- son inmediatos; es decir estos son menores o iguales a 
+ son inmediatos; es decir estos son menores o iguales a una función lineal
+ de 
 \begin_inset Formula $\log(n\delta_{n})$
 \end_inset
 
